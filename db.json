@@ -1,0 +1,228 @@
+{
+    "services": [
+        {
+            "id": 101,
+            "title": "Web Development",
+            "description": "Web development services.",
+            "categoryId": 1,
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": 102,
+            "title": "App Developer",
+            "description": "App development services.",
+            "categoryId": 1,
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": 103,
+            "title": "Cyber Security",
+            "description": "Cyber security services.",
+            "categoryId": 1,
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": 104,
+            "title": "Digital Marketing",
+            "description": "Digital marketing services.",
+            "categoryId": 1,
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": 201,
+            "title": "House Cleaning",
+            "description": "General home cleaning services.",
+            "categoryId": 0,
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": 202,
+            "title": "Event Decoration",
+            "description": "Decorations for birthdays and parties.",
+            "categoryId": 0,
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        }
+    ],
+    "providers": [
+        {
+            "pid": 1,
+            "name": "Amit Patel",
+            "role": "Web Developer",
+            "description": "I specialize in building responsive, modern websites using React and Node.js to help local businesses establish a strong online presence.",
+            "experience": 4,
+            "contact": "9876500001",
+            "serviceId": 101,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 2,
+            "name": "Neha Gupta",
+            "role": "Full-Stack Developer",
+            "description": "Full-stack developer with a passion for creating seamless e-commerce experiences and highly interactive web applications.",
+            "experience": 6,
+            "contact": "9876500002",
+            "serviceId": 101,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 3,
+            "name": "Rohan Desai",
+            "role": "Frontend Specialist",
+            "description": "Frontend expert focusing on fast, accessible, and visually appealing web interfaces that drive customer engagement.",
+            "experience": 2,
+            "contact": "9876500003",
+            "serviceId": 101,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 4,
+            "name": "Sneha Joshi",
+            "role": "Mobile App Developer",
+            "description": "Experienced in cross-platform mobile app development. I build sleek, user-friendly apps that work perfectly on both iOS and Android.",
+            "experience": 5,
+            "contact": "9876500004",
+            "serviceId": 102,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 5,
+            "name": "Vikram Singh",
+            "role": "Android Developer",
+            "description": "Native Android developer with deep knowledge of modern UI paradigms and performance optimization for mobile applications.",
+            "experience": 7,
+            "contact": "9876500005",
+            "serviceId": 102,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 6,
+            "name": "Pooja Mehta",
+            "role": "iOS Developer",
+            "description": "Helping businesses reach their customers on the go by designing and developing custom mobile applications tailored to their specific needs.",
+            "experience": 3,
+            "contact": "9876500006",
+            "serviceId": 102,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 7,
+            "name": "Karan Verma",
+            "role": "Ethical Hacker",
+            "description": "Certified ethical hacker dedicated to securing your web infrastructure, networks, and customer data from modern vulnerabilities.",
+            "experience": 8,
+            "contact": "9876500007",
+            "serviceId": 103,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 8,
+            "name": "Anjali Rao",
+            "role": "Security Consultant",
+            "description": "Expert in penetration testing, threat mitigation, and ensuring strict data privacy standards for small to medium-sized businesses.",
+            "experience": 5,
+            "contact": "9876500008",
+            "serviceId": 103,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 9,
+            "name": "Sanjay Kumar",
+            "role": "Cyber Security Analyst",
+            "description": "I provide comprehensive security audits and implement robust defense strategies to keep your digital assets completely secure.",
+            "experience": 10,
+            "contact": "9876500009",
+            "serviceId": 103,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 10,
+            "name": "Riya Shah",
+            "role": "SEO Specialist",
+            "description": "Driving business growth through targeted SEO, highly engaging social media campaigns, and data-backed content strategies.",
+            "experience": 4,
+            "contact": "9876500010",
+            "serviceId": 104,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 11,
+            "name": "Manish Tiwari",
+            "role": "PPC Campaign Manager",
+            "description": "Data-driven marketer specializing in Google Ads, paid social media advertising, and maximizing conversion rate optimization.",
+            "experience": 6,
+            "contact": "9876500011",
+            "serviceId": 104,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 12,
+            "name": "Kavita Reddy",
+            "role": "Digital Strategist",
+            "description": "Building brand presence and engaging local audiences with creative digital campaigns that turn online clicks into real-world customers.",
+            "experience": 3,
+            "contact": "9876500012",
+            "serviceId": 104,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 13,
+            "name": "Sunita Devi",
+            "role": "Deep Cleaning Specialist",
+            "description": "Meticulous and reliable professional offering comprehensive deep cleaning and sanitization services for your home or office.",
+            "experience": 8,
+            "contact": "9876500013",
+            "serviceId": 201,
+            "image": "/image/ProviderPfp.png"
+        },
+        {
+            "pid": 14,
+            "name": "Ramesh Yadav",
+            "role": "Residential Cleaner",
+            "description": "Fast, efficient, and trustworthy home cleaning using high-quality, eco-friendly products that are safe for pets and children.",
+            "experience": 4,
+            "contact": "9876500014",
+            "serviceId": 201,
+            "image": "/images/ProviderPfp.png"
+        },
+        {
+            "pid": 15,
+            "name": "Geeta Parmar",
+            "role": "Post-Construction Cleaner",
+            "description": "Specializing in thorough move-in/move-out cleaning, post-construction cleanup, and consistent weekly residential upkeep.",
+            "experience": 6,
+            "contact": "9876500015",
+            "serviceId": 201,
+            "image": "/images/ProviderPfp.png"
+        },
+        {
+            "pid": 16,
+            "name": "Aakash Mistry",
+            "role": "Theme Decorator",
+            "description": "Transforming ordinary spaces for birthdays, anniversaries, and corporate events with stunning, custom-themed decorations.",
+            "experience": 5,
+            "contact": "9876500016",
+            "serviceId": 202,
+            "image": "/images/ProviderPfp.png"
+        },
+        {
+            "pid": 17,
+            "name": "Priya Chawla",
+            "role": "Event Stylist",
+            "description": "Creative event stylist with a keen eye for beautiful floral arrangements, elegant table settings, and cohesive theme setups.",
+            "experience": 7,
+            "contact": "9876500017",
+            "serviceId": 202,
+            "image": "/images/ProviderPfp.png"
+        },
+        {
+            "pid": 18,
+            "name": "Deepak Patel",
+            "role": "Ambient Lighting Expert",
+            "description": "Making your special moments highly memorable with beautiful ambient lighting, premium balloon arches, and custom backdrops.",
+            "experience": 3,
+            "contact": "9876500018",
+            "serviceId": 202,
+            "image": "/images/ProviderPfp.png"
+        }
+    ]
+}

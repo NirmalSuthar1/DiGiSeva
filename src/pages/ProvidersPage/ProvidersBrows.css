@@ -1,0 +1,118 @@
+/* ProvidersCards.css */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.dotted-background {
+    /* This replaces the bulky JS canvas with a pure CSS dotted pattern */
+    background-color: #f8f9fa;
+    background-image: radial-gradient(#cccccc 1.5px, transparent 1.5px);
+    background-size: 25px 25px;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+.custom-card-wrapper {
+    /* Adds top margin so the floating avatar doesn't overlap rows above it */
+    margin-top: 70px;
+}
+
+.custom-card {
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 90px 0 0 0;
+    box-shadow: 0 0 60px -15px rgba(0, 0, 0, 0.15);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    height: 100%;
+}
+
+.custom-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 60px -10px rgba(0, 0, 0, 0.25);
+}
+
+.custom-avatar {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 130px;
+    height: 130px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    transition: transform 200ms ease;
+    padding: 6px;
+    /* Creates the white border effect */
+}
+
+.custom-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.custom-avatar:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+.custom-header h2 {
+    margin: 0;
+    padding: 0.5rem 1rem 0;
+    text-align: center;
+    font-weight: 900;
+    color: #1a1a1a;
+    font-size: 1.4rem;
+}
+
+.custom-title {
+    padding: 0.25rem 1rem 1rem;
+    font-size: 0.85em;
+    text-align: center;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.custom-colorband {
+    height: 3px;
+    width: 100%;
+}
+
+/* The three cycling gradient colors from the original design */
+.band-0 {
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+.band-1 {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.band-2 {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.custom-desc {
+    padding: 1.5rem 2rem;
+    font-size: 0.95em;
+    color: #4a4a4a;
+    text-align: center;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.custom-stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 0.85em;
+    color: #333;
+    background: #f8f9fa;
+    padding: 8px;
+    border-radius: 12px;
+}
