@@ -1,9 +1,10 @@
 import NavigationBar from "../../components/Navigation/NavigationBar";
 import { useEffect, useState } from 'react'
 import { useParams, Link } from "react-router-dom";
-import { Row, Col } from 'reactstrap'
 import '../../components/HomeSections/Home.css'
 import './ServicesPage.css'
+import Footer from "../../components/Footer/Footer";
+
 function ServicesPage() {
     const { categoryId } = useParams()
     const [services, setServices] = useState([])
@@ -47,6 +48,7 @@ function ServicesPage() {
                     ))}
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
