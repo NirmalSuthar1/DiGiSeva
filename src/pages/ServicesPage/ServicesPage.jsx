@@ -20,6 +20,7 @@ function ServicesPage() {
         getData()
     }, [categoryId])
 
+
     return (
         <>
             <NavigationBar />
