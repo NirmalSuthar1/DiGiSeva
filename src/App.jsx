@@ -4,7 +4,8 @@ import { RouterProvider } from 'react-router-dom'
 
 import Home from './pages/Home/Home'
 import Services from './pages/ServicesPage/ServicesPage'
-import Providers from './pages/ProvidersPage/ProvidersBrows'
+import ProvidersBrows from './pages/ProvidersPage/ProvidersBrows'
+import ProviderProfilePage from './pages/ProviderProfile/ProviderProfilePage'
 
 function App() {
   const router = createBrowserRouter([
@@ -18,7 +19,11 @@ function App() {
     },
     {
       path: '/providers/:ptype',
-      element: <Providers />
+      element: <ProvidersBrows />
+    },
+    {
+      path: '/providerPage',
+      element: <ProviderProfilePage />
     }
   ])
 

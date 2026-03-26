@@ -65,7 +65,7 @@
 
 .service-card {
     background: linear-gradient(to top, #0A3B1C, #115b2c);
-    /* background-color: #0A3B1C; #126831*/
+     /*background-color: #0A3B1C; #126831*/
     border-radius: 1.5rem;
     min-height: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

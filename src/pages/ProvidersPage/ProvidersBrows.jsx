@@ -110,11 +110,13 @@ function ProvidersBrows() {
                                                 </svg>
                                                 +91 {provider.contact}
                                             </div>
+                                            <Link to='/providerPage'>
                                             <div className="action-btn-circle">
                                                 <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                                                     <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                                 </svg>
                                             </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +125,7 @@ function ProvidersBrows() {
                     })}
                 </div>
 
-                {/* Bottom Banner */}
+                {/* Banner */}
                 <div className="bottom-cta p-5 rounded-5 text-center text-white mt-2 mb-5 mx-0 mx-md-4">
                     <h2 className="fw-bold mb-3 mt-4" style={{ letterSpacing: '-1px', fontSize: '2.4rem' }}>Need a custom technical team?</h2>
                     <p className="mb-5 mx-auto text-light" style={{ maxWidth: '550px', fontSize: '1.05rem', opacity: 0.8, lineHeight: 1.6 }}>
