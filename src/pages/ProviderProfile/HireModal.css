@@ -1,0 +1,633 @@
+/* ── Overlay ── */
+.hm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 18, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: hm-fade-in 0.2s ease;
+}
+
+@keyframes hm-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ── Modal Container ── */
+.hm-modal {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18), 0 4px 16px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 640px;
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: hm-slide-up 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@keyframes hm-slide-up {
+    from { opacity: 0; transform: translateY(28px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Header ── */
+.hm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 30px 24px;
+    border-bottom: 1px solid #f0f0f5;
+    flex-shrink: 0;
+}
+
+.hm-header-tag {
+    font-size: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #a0a0ab;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.hm-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #22222b;
+    letter-spacing: -0.4px;
+    margin: 0 0 4px;
+}
+
+.hm-subtitle {
+    font-size: 0.82rem;
+    color: #9090a0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.hm-close {
+    background: #f4f5f7;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555562;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s, color 0.2s;
+    margin-left: 16px;
+    margin-top: 2px;
+}
+
+.hm-close:hover {
+    background: #2b2b36;
+    color: #ffffff;
+}
+
+/* ── Form (flex pass-through) ── */
+.hm-modal > form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* ── Scrollable Body ── */
+.hm-body {
+    padding: 26px 30px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    flex: 1;
+    min-height: 0;
+}
+
+.hm-body::-webkit-scrollbar {
+    width: 5px;
+}
+.hm-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+.hm-body::-webkit-scrollbar-thumb {
+    background: #e0e0eb;
+    border-radius: 4px;
+}
+
+/* ── Fields ── */
+.hm-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hm-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #22222b;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+
+.hm-hint {
+    font-size: 0.75rem;
+    color: #9090a0;
+    margin: -4px 0 0;
+    line-height: 1.5;
+}
+
+.hm-required {
+    color: #e05252;
+    margin-left: 2px;
+}
+
+.hm-optional {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #b0b0bb;
+    margin-left: 4px;
+}
+
+.hm-error {
+    font-size: 0.73rem;
+    color: #d94040;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/* ── Inputs ── */
+.hm-input,
+.hm-textarea,
+.hm-select {
+    width: 100%;
+    background: #fafbfc;
+    border: 1.5px solid #e8e8f0;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.88rem;
+    font-family: inherit;
+    color: #22222b;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.hm-input::placeholder,
+.hm-textarea::placeholder {
+    color: #b8b8c8;
+}
+
+.hm-input:focus,
+.hm-textarea:focus,
+.hm-select:focus {
+    border-color: #2b2b36;
+    box-shadow: 0 0 0 3px rgba(43, 43, 54, 0.08);
+    background: #fff;
+}
+
+.hm-input-error {
+    border-color: #e05252 !important;
+    box-shadow: 0 0 0 3px rgba(224, 82, 82, 0.1) !important;
+}
+
+.hm-textarea {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.65;
+}
+
+.hm-select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3E%3Cpath fill='%23888899' d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+
+/* ── Duration Row ── */
+.hm-duration-row {
+    display: flex;
+    gap: 10px;
+}
+
+.hm-duration-input {
+    flex: 1;
+}
+
+.hm-duration-unit {
+    width: 130px;
+    flex-shrink: 0;
+}
+
+/* ── Price Type ── */
+.hm-price-type-row {
+    display: flex;
+    gap: 12px;
+}
+
+.hm-price-type-option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 1.5px solid #e8e8f0;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+    background: #fafbfc;
+    user-select: none;
+}
+
+.hm-price-type-option input[type="radio"] {
+    display: none;
+}
+
+.hm-price-type-option:hover {
+    border-color: #c0c0d0;
+    background: #fff;
+}
+
+.hm-price-type-option.active {
+    border-color: #2b2b36;
+    background: #f7f7fb;
+    box-shadow: 0 0 0 3px rgba(43, 43, 54, 0.07);
+}
+
+.hm-price-type-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.hm-price-type-title {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: #22222b;
+    margin-bottom: 1px;
+}
+
+.hm-price-type-desc {
+    font-size: 0.72rem;
+    color: #9090a0;
+}
+
+/* ── Price Amount ── */
+.hm-price-amount-wrap {
+    margin-top: 4px;
+}
+
+.hm-input-prefix-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hm-input-prefix {
+    position: absolute;
+    left: 16px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #555562;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hm-prefixed-input {
+    padding-left: 34px;
+    padding-right: 52px;
+}
+
+.hm-input-suffix {
+    position: absolute;
+    right: 16px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #a0a0ab;
+    pointer-events: none;
+    letter-spacing: 0.3px;
+}
+
+/* ── Payment Chips ── */
+.hm-payment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hm-payment-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 1.5px solid #e8e8f0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #555562;
+    background: #fafbfc;
+    transition: border-color 0.18s, background 0.18s, color 0.18s, box-shadow 0.18s;
+    user-select: none;
+    position: relative;
+}
+
+.hm-payment-chip input[type="checkbox"] {
+    display: none;
+}
+
+.hm-payment-chip:hover {
+    border-color: #b8b8c8;
+    background: #fff;
+}
+
+.hm-payment-chip.active {
+    border-color: #2b2b36;
+    background: #2b2b36;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(43, 43, 54, 0.18);
+}
+
+.hm-payment-icon {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.hm-payment-check {
+    margin-left: 2px;
+    opacity: 0.9;
+}
+
+/* ── Dropzone ── */
+.hm-dropzone {
+    border: 2px dashed #d8d8e8;
+    border-radius: 16px;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    background: #fafbfc;
+    text-align: center;
+}
+
+.hm-dropzone:hover,
+.hm-dropzone.drag-over {
+    border-color: #2b2b36;
+    background: #f4f5f7;
+}
+
+.hm-dropzone-icon {
+    color: #b0b0c0;
+    margin-bottom: 4px;
+    transition: color 0.2s;
+}
+
+.hm-dropzone:hover .hm-dropzone-icon,
+.hm-dropzone.drag-over .hm-dropzone-icon {
+    color: #2b2b36;
+}
+
+.hm-dropzone-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.hm-dropzone-main {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #33333f;
+}
+
+.hm-dropzone-sub {
+    font-size: 0.78rem;
+    color: #9090a0;
+}
+
+.hm-dropzone-link {
+    color: #2b2b36;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.hm-dropzone-types {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #b8b8c8;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.hm-file-input-hidden {
+    display: none;
+}
+
+/* ── Preview Grid ── */
+.hm-preview-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.hm-preview-item {
+    position: relative;
+    width: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1.5px solid #e8e8f0;
+    background: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hm-preview-img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+}
+
+.hm-preview-video {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+}
+
+.hm-preview-audio-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 8px 6px;
+    gap: 6px;
+}
+
+.hm-preview-audio-icon {
+    font-size: 1.6rem;
+}
+
+.hm-preview-audio {
+    width: 90px;
+    height: 28px;
+}
+
+.hm-preview-pdf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 8px 8px;
+    gap: 6px;
+}
+
+.hm-preview-pdf-icon {
+    font-size: 2rem;
+}
+
+.hm-preview-pdf-name {
+    font-size: 0.65rem;
+    color: #6a6a75;
+    text-align: center;
+    word-break: break-all;
+    line-height: 1.3;
+    padding: 0 4px;
+}
+
+.hm-preview-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(22, 22, 30, 0.75);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: background 0.15s;
+}
+
+.hm-preview-remove:hover {
+    background: #d94040;
+}
+
+.hm-preview-filename {
+    font-size: 0.62rem;
+    color: #888899;
+    padding: 5px 6px;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ebebf3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #fff;
+}
+
+/* ── Footer ── */
+.hm-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 20px 30px 24px;
+    border-top: 1px solid #f0f0f5;
+    flex-shrink: 0;
+}
+
+.hm-btn-cancel {
+    background: transparent;
+    color: #555562;
+    border: 1.5px solid #e0e0eb;
+    border-radius: 30px;
+    padding: 11px 24px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.hm-btn-cancel:hover {
+    border-color: #b0b0c0;
+    background: #f4f5f7;
+}
+
+.hm-btn-submit {
+    background: #2b2b36;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 26px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px rgba(43, 43, 54, 0.2);
+}
+
+.hm-btn-submit:hover {
+    background: #111118;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(43, 43, 54, 0.28);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    .hm-modal {
+        max-height: 100vh;
+        border-radius: 20px 20px 0 0;
+        align-self: flex-end;
+    }
+    .hm-overlay {
+        align-items: flex-end;
+        padding: 0;
+    }
+    .hm-header,
+    .hm-body,
+    .hm-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hm-price-type-row {
+        flex-direction: column;
+    }
+    .hm-footer {
+        flex-direction: column-reverse;
+    }
+    .hm-btn-cancel,
+    .hm-btn-submit {
+        width: 100%;
+        justify-content: center;
+    }
+}
