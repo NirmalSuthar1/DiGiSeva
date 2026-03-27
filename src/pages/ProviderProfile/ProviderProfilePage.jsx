@@ -3,6 +3,7 @@ import NavBar from "../../components/Navigation/NavigationBar"
 import Footer from "../../components/Footer/Footer"
 import { Link, useParams } from "react-router-dom"
 import "./ProviderProfilePage.css"
+import HireModal from "./HireModal"
 
 const StarRating = ({ rating }) => {
     return (
@@ -20,6 +21,7 @@ const ProviderProfilePage = () => {
     const { pid } = useParams();
     const [provider, setProvider] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [hireModalOpen, setHireModalOpen] = useState(false);
 
     useEffect(() => {
         const fetchProvider = async () => {
@@ -126,7 +128,7 @@ const ProviderProfilePage = () => {
                                     <span className="rate-value">{provider.hourlyRate}</span>
                                 </div>
 
-                                <button className="btn-hire w-100 mt-3">Hire {provider.name.split(" ")[0]}</button>
+                                <button className="btn-hire w-100 mt-3" onClick={() => setHireModalOpen(true)}>Hire {provider.name.split(" ")[0]}</button>
                                 <button className="btn-message w-100 mt-2">Send a Message</button>
                             </div>
 
@@ -259,6 +261,9 @@ const ProviderProfilePage = () => {
                 </div>
             </div>
             <Footer />
+            {hireModalOpen && (
+                <HireModal provider={provider} onClose={() => setHireModalOpen(false)} />
+            )}
         </>
     )
 }

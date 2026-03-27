@@ -6,6 +6,8 @@ import Home from './pages/Home/Home'
 import Services from './pages/ServicesPage/ServicesPage'
 import ProvidersBrows from './pages/ProvidersPage/ProvidersBrows'
 import ProviderProfilePage from './pages/ProviderProfile/ProviderProfilePage'
+import LogInPage from './pages/AuthPage/LogInPage'
+import RegisterPage from './pages/AuthPage/RegisterPage'
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +26,14 @@ function App() {
     {
       path: '/providerPage/:pid',
       element: <ProviderProfilePage />
+    },
+    {
+      path: '/login',
+      element: <LogInPage />
+    },
+    {
+      path: '/register',
+      element: <RegisterPage />
     }
   ])
 
