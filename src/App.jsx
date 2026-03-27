@@ -22,7 +22,7 @@ function App() {
       element: <ProvidersBrows />
     },
     {
-      path: '/providerPage',
+      path: '/providerPage/:pid',
       element: <ProviderProfilePage />
     }
   ])

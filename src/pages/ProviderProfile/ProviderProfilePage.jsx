@@ -1,49 +1,8 @@
+import React, { useState, useEffect } from 'react'
 import NavBar from "../../components/Navigation/NavigationBar"
 import Footer from "../../components/Footer/Footer"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import "./ProviderProfilePage.css"
-
-const provider = {
-    name: "Arjun Mehta",
-    role: "Full Stack Developer",
-    tagline: "Building scalable web apps that users love.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    rating: 4.9,
-    reviewCount: 128,
-    experience: 7,
-    location: "Mumbai, Maharashtra",
-    languages: ["Hindi", "English", "Marathi"],
-    availability: "Available",
-    hourlyRate: "₹1,200 / hr",
-    contact: "98765 43210",
-    email: "arjun.mehta@digiseva.in",
-    completedJobs: 214,
-    repeatClients: 76,
-    responseTime: "< 1 hour",
-    about: `I'm a passionate full-stack developer with 7+ years of experience delivering robust, scalable, and user-friendly digital solutions. I've worked with startups, SMEs, and enterprise clients across fintech, healthcare, and e-commerce domains. My approach is to deeply understand the business problem first, then craft an elegant technical solution. I take pride in clean code, on-time delivery, and crystal-clear communication throughout the project.`,
-    skills: ["React", "Node.js", "MongoDB", "PostgreSQL", "AWS", "Docker", "TypeScript", "GraphQL", "Redis", "Figma"],
-    services: [
-        { icon: "🖥️", title: "Web App Development", desc: "End-to-end web applications using modern frameworks." },
-        { icon: "📱", title: "Mobile-First Design", desc: "Responsive UIs that look great on every screen." },
-        { icon: "☁️", title: "Cloud & DevOps", desc: "AWS deployments, CI/CD pipelines, and Docker setups." },
-        { icon: "🔌", title: "API Integration", desc: "RESTful and GraphQL APIs, third-party integrations." },
-    ],
-    experience_timeline: [
-        { year: "2022 – Present", company: "FreelanceHub", role: "Senior Freelance Developer", desc: "Delivered 80+ projects for international clients across diverse industries." },
-        { year: "2019 – 2022", company: "TechNova Solutions", role: "Full Stack Engineer", desc: "Led a team of 4 developers building a SaaS analytics platform." },
-        { year: "2017 – 2019", company: "StartApp Labs", role: "Junior Developer", desc: "Built REST APIs and React dashboards for early-stage startups." },
-    ],
-    reviews: [
-        { name: "Priya Sharma", avatar: "https://randomuser.me/api/portraits/women/44.jpg", rating: 5, comment: "Arjun delivered the project on time and exceeded our expectations. The code quality was excellent and communication was top-notch.", date: "Feb 2025" },
-        { name: "Rahul Gupta", avatar: "https://randomuser.me/api/portraits/men/57.jpg", rating: 5, comment: "Extremely professional. He understood our requirements perfectly and delivered a flawless product. Will definitely hire again!", date: "Jan 2025" },
-        { name: "Neha Joshi", avatar: "https://randomuser.me/api/portraits/women/68.jpg", rating: 4, comment: "Great work on the dashboard project. Very knowledgeable about React and handled all our last-minute changes gracefully.", date: "Dec 2024" },
-    ],
-    certifications: [
-        { name: "AWS Certified Developer", issuer: "Amazon Web Services", year: "2023" },
-        { name: "MongoDB Professional", issuer: "MongoDB University", year: "2022" },
-        { name: "Google UX Design", issuer: "Coursera / Google", year: "2021" },
-    ],
-}
 
 const StarRating = ({ rating }) => {
     return (
@@ -58,6 +17,57 @@ const StarRating = ({ rating }) => {
 }
 
 const ProviderProfilePage = () => {
+    const { pid } = useParams();
+    const [provider, setProvider] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchProvider = async () => {
+            try {
+                const res = await fetch(`http://localhost:5000/providers?pid=${pid}`);
+                const data = await res.json();
+                if (data && data.length > 0) {
+                    setProvider(data[0]);
+                } else {
+                    setProvider(null);
+                }
+                setLoading(false);
+            } catch (error) {
+                console.error("Error fetching provider data:", error);
+                setLoading(false);
+            }
+        };
+        fetchProvider();
+    }, [pid]);
+
+    if (loading) {
+        return (
+            <>
+                <NavBar />
+                <div className="text-center mt-5 mb-5 py-5">
+                    <div className="spinner-border text-primary" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
+                    <p className="mt-3">Loading profile...</p>
+                </div>
+                <Footer />
+            </>
+        )
+    }
+
+    if (!provider || Object.keys(provider).length === 0) {
+        return (
+            <>
+                <NavBar />
+                <div className="text-center mt-5 mb-5 py-5">
+                    <h3>Provider not found</h3>
+                    <Link to="/" className="btn btn-primary mt-3">Back to Home</Link>
+                </div>
+                <Footer />
+            </>
+        )
+    }
+
     return (
         <>
             <NavBar />
@@ -68,7 +78,7 @@ const ProviderProfilePage = () => {
                     <nav aria-label="breadcrumb" className="profile-breadcrumb mb-4">
                         <ol>
                             <li><Link to="/">HOME</Link></li>
-                            <li><Link to="/providers/1">DEVELOPERS</Link></li>
+                            <li><Link to={`/providers/${provider.serviceId || 1}`}>DEVELOPERS</Link></li>
                             <li className="active">{provider.name.toUpperCase()}</li>
                         </ol>
                     </nav>
