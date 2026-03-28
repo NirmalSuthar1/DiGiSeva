@@ -4,6 +4,7 @@ import './Navigation.css'
 
 function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const loggedIn = !!localStorage.getItem('ds_user')
 
   return (
     <nav className="navbar-modern" style={{ position: 'sticky', top: 0, zIndex: 1000 }}>
@@ -25,13 +26,20 @@ function NavigationBar() {
             Home
           </NavLink>
 
-          <NavLink
-            to="/about"
-            className={({ isActive }) => `nav-item-link${isActive ? ' active' : ''}`}
-            onClick={() => setMenuOpen(false)}
+          <Link
+            to="/#about"
+            className="nav-item-link"
+            onClick={(e) => {
+              setMenuOpen(false)
+              const el = document.getElementById('about')
+              if (el) {
+                e.preventDefault()
+                el.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
           >
             About
-          </NavLink>
+          </Link>
 
           <div className="nav-dropdown">
             <span className="nav-item-link dropdown-trigger">
@@ -73,8 +81,8 @@ function NavigationBar() {
 
         {/* Right Actions */}
         <div className="navbar-actions">
-          <Link to="/login" className="btn-get-started">
-            Get Started
+          <Link to={loggedIn ? '/dashboard' : '/login'} className="btn-get-started">
+            {loggedIn ? 'Dashboard' : 'Get Started'}
           </Link>
           <button
             className={`hamburger ${menuOpen ? 'open' : ''}`}

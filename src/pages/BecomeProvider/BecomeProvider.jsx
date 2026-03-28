@@ -193,6 +193,7 @@ const BecomeProvider = () => {
     const navigate = useNavigate()
     const [step, setStep] = useState(1)
     const [errors, setErrors] = useState({})
+    const [loading, setLoading] = useState(false)
 
     /* Step 1 — Account */
     const [account, setAccount] = useState({ name: '', email: '', password: '', confirmPassword: '' })
@@ -306,11 +307,34 @@ const BecomeProvider = () => {
 
     /* ── Navigation ── */
 
-    const handleNext = () => {
+    const handleNext = async () => {
         if (step === 1) {
             const errs = validateStep1(account)
             setErrors(errs)
             if (Object.keys(errs).length > 0) return
+
+            // Check email uniqueness across both users and providers
+            setLoading(true)
+            try {
+                const [usersRes, providersRes] = await Promise.all([
+                    fetch(`http://localhost:5000/users?email=${encodeURIComponent(account.email)}`),
+                    fetch(`http://localhost:5000/providers?email=${encodeURIComponent(account.email)}`)
+                ])
+                const [existingUsers, existingProviders] = await Promise.all([
+                    usersRes.json(),
+                    providersRes.json()
+                ])
+                if (existingUsers.length > 0 || existingProviders.length > 0) {
+                    setErrors({ email: 'This email is already registered.' })
+                    setLoading(false)
+                    return
+                }
+            } catch {
+                setErrors({ email: 'Could not verify email. Check your connection.' })
+                setLoading(false)
+                return
+            }
+            setLoading(false)
             setProfile(prev => ({ ...prev, fullName: prev.fullName || account.name }))
         }
         if (step === 2) {
@@ -328,14 +352,59 @@ const BecomeProvider = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const errs = validateStep3(qual)
         setErrors(errs)
         if (Object.keys(errs).length > 0) return
-        console.log('Provider registration submitted:', { account, profile, qual })
-        setStep(4)
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+
+        setLoading(true)
+        try {
+            const newProvider = {
+                id: String(Date.now()),
+                name: account.name,
+                email: account.email,
+                password: account.password,
+                role: 'provider',
+                status: 'pending',
+                profile: {
+                    fullName: profile.fullName,
+                    title: profile.role,
+                    experience: Number(profile.experience),
+                    expertise: profile.expertise,
+                    bio: profile.bio,
+                    phone: profile.phone,
+                    city: profile.city,
+                    state: profile.state,
+                    languages: profile.languages,
+                    photoName: profile.photo?.name || null,
+                },
+                qualifications: {
+                    education: qual.education,
+                    certifications: qual.certificationName,
+                    resumeFiles: qual.resumeFiles.map(f => f.name),
+                    certificationFiles: qual.certificationFiles.map(f => f.name),
+                    additionalFiles: qual.additionalFiles.map(f => f.name),
+                },
+                createdAt: new Date().toISOString(),
+            }
+
+            const response = await fetch('http://localhost:5000/providers', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(newProvider)
+            })
+
+            if (response.ok) {
+                setStep(4)
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+            } else {
+                setErrors({ submit: 'Failed to submit application. Please try again.' })
+            }
+        } catch {
+            setErrors({ submit: 'Could not connect to server. Please try again.' })
+        }
+        setLoading(false)
     }
 
     /* ── Render ── */
@@ -436,8 +505,8 @@ const BecomeProvider = () => {
 
                                 <div className="bp-actions">
                                     <Link to="/register" className="bp-btn-back">← Back to Register</Link>
-                                    <button type="button" className="bp-btn-next" onClick={handleNext}>
-                                        Continue to Profile →
+                                    <button type="button" className="bp-btn-next" onClick={handleNext} disabled={loading}>
+                                        {loading ? 'Checking…' : 'Continue to Profile →'}
                                     </button>
                                 </div>
                             </div>
@@ -737,13 +806,20 @@ const BecomeProvider = () => {
 
                                     </div>
 
+                                    {errors.submit && (
+                                        <div className="bp-error" style={{ textAlign: 'center', marginTop: 8 }}>{errors.submit}</div>
+                                    )}
                                     <div className="bp-actions">
                                         <button type="button" className="bp-btn-back" onClick={handleBack}>← Back</button>
-                                        <button type="submit" className="bp-btn-submit">
-                                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" style={{ marginRight: 7 }}>
-                                                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338L1.88 6.88l10.625-4.125-2.374 6.498-.154-.24z" />
-                                            </svg>
-                                            Submit Application
+                                        <button type="submit" className="bp-btn-submit" disabled={loading}>
+                                            {loading ? 'Submitting…' : (
+                                                <>
+                                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" style={{ marginRight: 7 }}>
+                                                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338L1.88 6.88l10.625-4.125-2.374 6.498-.154-.24z" />
+                                                    </svg>
+                                                    Submit Application
+                                                </>
+                                            )}
                                         </button>
                                     </div>
                                 </div>

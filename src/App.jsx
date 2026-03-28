@@ -9,6 +9,7 @@ import ProviderProfilePage from './pages/ProviderProfile/ProviderProfilePage'
 import LogInPage from './pages/AuthPage/LogInPage'
 import RegisterPage from './pages/AuthPage/RegisterPage'
 import BecomeProvider from './pages/BecomeProvider/BecomeProvider'
+import Dashboard from './pages/Dashboard/Dashboard'
 
 function App() {
   const router = createBrowserRouter([
@@ -39,6 +40,10 @@ function App() {
     {
       path: '/become-provider',
       element: <BecomeProvider />
+    },
+    {
+      path: '/dashboard',
+      element: <Dashboard />
     }
   ])
 

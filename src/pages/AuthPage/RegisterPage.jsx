@@ -51,13 +51,51 @@ const RegisterPage = () => {
         setErrors(prev => ({ ...prev, [field]: undefined }))
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const errs = validate(form)
         setErrors(errs)
         if (Object.keys(errs).length === 0) {
-            setSubmitted(true)
-            console.log('Register as client:', form)
+            try {
+                const [usersRes, providersRes] = await Promise.all([
+                    fetch(`http://localhost:5000/users?email=${encodeURIComponent(form.email)}`),
+                    fetch(`http://localhost:5000/providers?email=${encodeURIComponent(form.email)}`)
+                ])
+                const [existingUsers, existingProviders] = await Promise.all([
+                    usersRes.json(),
+                    providersRes.json()
+                ])
+
+                if (existingUsers.length > 0 || existingProviders.length > 0) {
+                    setErrors({ email: 'This email is already registered.' })
+                    return
+                }
+                
+                const newUser = {
+                    id: String(Date.now()),
+                    name: form.name,
+                    email: form.email,
+                    password: form.password,
+                    role: role
+                }
+                
+                const response = await fetch('http://localhost:5000/users', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(newUser)
+                })
+                
+                if (response.ok) {
+                    setSubmitted(true)
+                    setTimeout(() => {
+                        navigate('/login')
+                    }, 2000)
+                } else {
+                    setErrors({ submit: 'Failed to create account.' })
+                }
+            } catch (error) {
+                setErrors({ submit: 'Failed to connect to server.' })
+            }
         }
     }
 
@@ -230,6 +268,7 @@ const RegisterPage = () => {
                                         {errors.confirmPassword && <div className="auth-error">{errors.confirmPassword}</div>}
                                     </div>
 
+                                    {errors.submit && <div className="auth-error" style={{marginBottom: '1rem', textAlign: 'center'}}>{errors.submit}</div>}
                                     <button type="submit" className="auth-btn-submit">
                                         Create Account
                                     </button>

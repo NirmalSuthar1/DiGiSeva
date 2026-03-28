@@ -682,6 +682,14 @@
     box-shadow: 0 6px 20px rgba(43, 43, 54, 0.28);
 }
 
+.bp-btn-next:disabled,
+.bp-btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
 /* ── Success ── */
 .bp-success {
     padding: 60px 44px;

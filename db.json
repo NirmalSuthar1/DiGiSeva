@@ -1,1596 +1,1753 @@
 {
-    "services": [
+  "services": [
+    {
+      "id": "101",
+      "title": "Web Development",
+      "description": "Web development services.",
+      "categoryId": 1,
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "102",
+      "title": "App Developer",
+      "description": "App development services.",
+      "categoryId": 1,
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "103",
+      "title": "Cyber Security",
+      "description": "Cyber security services.",
+      "categoryId": 1,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "104",
+      "title": "Digital Marketing",
+      "description": "Digital marketing services.",
+      "categoryId": 1,
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "201",
+      "title": "House Cleaning",
+      "description": "General home cleaning services.",
+      "categoryId": 0,
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "202",
+      "title": "Event Decoration",
+      "description": "Decorations for birthdays and parties.",
+      "categoryId": 0,
+      "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "providers": [
+    {
+      "pid": 1,
+      "name": "Amit Patel",
+      "role": "Web Developer",
+      "description": "I specialize in building responsive, modern websites using React and Node.js to help local businesses establish a strong online presence.",
+      "experience": 4,
+      "contact": "9876500001",
+      "serviceId": 101,
+      "image": "https://randomuser.me/api/portraits/men/20.jpg",
+      "tagline": "I specialize in building responsive, modern websit...",
+      "rating": 4.7,
+      "reviewCount": 53,
+      "location": "Mumbai, Maharashtra",
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "availability": "Busy",
+      "hourlyRate": "₹2000 / hr",
+      "email": "amit.patel@digiseva.in",
+      "completedJobs": 154,
+      "repeatClients": 47,
+      "responseTime": "< 3 hour(s)",
+      "about": "I specialize in building responsive, modern websites using React and Node.js to help local businesses establish a strong online presence.",
+      "skills": [
+        "MongoDB",
+        "Tailwind CSS",
+        "React",
+        "TypeScript",
+        "AWS"
+      ],
+      "services": [
         {
-            "id": 101,
-            "title": "Web Development",
-            "description": "Web development services.",
-            "categoryId": 1,
-            "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          "icon": "☁️",
+          "title": "Backend Development",
+          "desc": "Scalable REST APIs and robust database architecture."
         },
         {
-            "id": 102,
-            "title": "App Developer",
-            "description": "App development services.",
-            "categoryId": 1,
-            "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            "id": 103,
-            "title": "Cyber Security",
-            "description": "Cyber security services.",
-            "categoryId": 1,
-            "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            "id": 104,
-            "title": "Digital Marketing",
-            "description": "Digital marketing services.",
-            "categoryId": 1,
-            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            "id": 201,
-            "title": "House Cleaning",
-            "description": "General home cleaning services.",
-            "categoryId": 0,
-            "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            "id": 202,
-            "title": "Event Decoration",
-            "description": "Decorations for birthdays and parties.",
-            "categoryId": 0,
-            "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          "icon": "🚀",
+          "title": "Performance Optimization",
+          "desc": "Speeding up your web apps for better UX and SEO."
         }
-    ],
-    "providers": [
+      ],
+      "experience_timeline": [
         {
-            "pid": 1,
-            "name": "Amit Patel",
-            "role": "Web Developer",
-            "description": "I specialize in building responsive, modern websites using React and Node.js to help local businesses establish a strong online presence.",
-            "experience": 4,
-            "contact": "9876500001",
-            "serviceId": 101,
-            "image": "https://randomuser.me/api/portraits/men/20.jpg",
-            "tagline": "I specialize in building responsive, modern websit...",
-            "rating": 4.7,
-            "reviewCount": 53,
-            "location": "Mumbai, Maharashtra",
-            "languages": [
-                "Hindi",
-                "English"
-            ],
-            "availability": "Busy",
-            "hourlyRate": "\u20b92000 / hr",
-            "email": "amit.patel@digiseva.in",
-            "completedJobs": 154,
-            "repeatClients": 47,
-            "responseTime": "< 3 hour(s)",
-            "about": "I specialize in building responsive, modern websites using React and Node.js to help local businesses establish a strong online presence.",
-            "skills": [
-                "MongoDB",
-                "Tailwind CSS",
-                "React",
-                "TypeScript",
-                "AWS"
-            ],
-            "services": [
-                {
-                    "icon": "\u2601\ufe0f",
-                    "title": "Backend Development",
-                    "desc": "Scalable REST APIs and robust database architecture."
-                },
-                {
-                    "icon": "\ud83d\ude80",
-                    "title": "Performance Optimization",
-                    "desc": "Speeding up your web apps for better UX and SEO."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Web Developer",
-                    "desc": "Delivered multiple successful projects and solutions as a Web Developer."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Web Developer",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/36.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They web app perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/26.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the web app.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "AWS Certified Developer",
-                    "issuer": "Amazon Web Services",
-                    "year": "2023"
-                },
-                {
-                    "name": "Full Stack Web Certification",
-                    "issuer": "freeCodeCamp",
-                    "year": "2021"
-                }
-            ]
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Web Developer",
+          "desc": "Delivered multiple successful projects and solutions as a Web Developer."
         },
         {
-            "pid": 2,
-            "name": "Neha Gupta",
-            "role": "Full-Stack Developer",
-            "description": "Full-stack developer with a passion for creating seamless e-commerce experiences and highly interactive web applications.",
-            "experience": 6,
-            "contact": "9876500002",
-            "serviceId": 101,
-            "image": "https://randomuser.me/api/portraits/women/25.jpg",
-            "tagline": "Full-stack developer with a passion for creating s...",
-            "rating": 4.7,
-            "reviewCount": 120,
-            "location": "Delhi, NCR",
-            "languages": [
-                "English",
-                "Marathi"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b9500 / hr",
-            "email": "neha.gupta@digiseva.in",
-            "completedJobs": 248,
-            "repeatClients": 37,
-            "responseTime": "< 4 hour(s)",
-            "about": "Full-stack developer with a passion for creating seamless e-commerce experiences and highly interactive web applications.",
-            "skills": [
-                "MongoDB",
-                "TypeScript",
-                "React",
-                "Node.js",
-                "GraphQL"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\ude80",
-                    "title": "Performance Optimization",
-                    "desc": "Speeding up your web apps for better UX and SEO."
-                },
-                {
-                    "icon": "\ud83d\udda5\ufe0f",
-                    "title": "Web App Development",
-                    "desc": "End-to-end custom web applications using modern frameworks."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Full-Stack Developer",
-                    "desc": "Delivered multiple successful projects and solutions as a Full-Stack Developer."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Full-Stack Developer",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/21.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They website perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/5.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the React dashboard.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "AWS Certified Developer",
-                    "issuer": "Amazon Web Services",
-                    "year": "2023"
-                },
-                {
-                    "name": "Full Stack Web Certification",
-                    "issuer": "freeCodeCamp",
-                    "year": "2021"
-                }
-            ]
-        },
-        {
-            "pid": 3,
-            "name": "Rohan Desai",
-            "role": "Frontend Specialist",
-            "description": "Frontend expert focusing on fast, accessible, and visually appealing web interfaces that drive customer engagement.",
-            "experience": 2,
-            "contact": "9876500003",
-            "serviceId": 101,
-            "image": "https://randomuser.me/api/portraits/men/22.jpg",
-            "tagline": "Frontend expert focusing on fast, accessible, and ...",
-            "rating": 4.9,
-            "reviewCount": 28,
-            "location": "Bengaluru, Karnataka",
-            "languages": [
-                "Marathi",
-                "Gujarati"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b9800 / hr",
-            "email": "rohan.desai@digiseva.in",
-            "completedJobs": 229,
-            "repeatClients": 65,
-            "responseTime": "< 2 hour(s)",
-            "about": "Frontend expert focusing on fast, accessible, and visually appealing web interfaces that drive customer engagement.",
-            "skills": [
-                "Node.js",
-                "AWS",
-                "GraphQL",
-                "Next.js",
-                "Tailwind CSS"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\ude80",
-                    "title": "Performance Optimization",
-                    "desc": "Speeding up your web apps for better UX and SEO."
-                },
-                {
-                    "icon": "\u2601\ufe0f",
-                    "title": "Backend Development",
-                    "desc": "Scalable REST APIs and robust database architecture."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Frontend Specialist",
-                    "desc": "Delivered multiple successful projects and solutions as a Frontend Specialist."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Frontend Specialist",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/37.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They code quality perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/1.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the code quality.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "AWS Certified Developer",
-                    "issuer": "Amazon Web Services",
-                    "year": "2023"
-                },
-                {
-                    "name": "Full Stack Web Certification",
-                    "issuer": "freeCodeCamp",
-                    "year": "2021"
-                }
-            ]
-        },
-        {
-            "pid": 4,
-            "name": "Sneha Joshi",
-            "role": "Mobile App Developer",
-            "description": "Experienced in cross-platform mobile app development. I build sleek, user-friendly apps that work perfectly on both iOS and Android.",
-            "experience": 5,
-            "contact": "9876500004",
-            "serviceId": 102,
-            "image": "https://randomuser.me/api/portraits/women/23.jpg",
-            "tagline": "Experienced in cross-platform mobile app developme...",
-            "rating": 4.6,
-            "reviewCount": 102,
-            "location": "Pune, Maharashtra",
-            "languages": [
-                "Hindi",
-                "English"
-            ],
-            "availability": "Busy",
-            "hourlyRate": "\u20b9500 / hr",
-            "email": "sneha.joshi@digiseva.in",
-            "completedJobs": 123,
-            "repeatClients": 77,
-            "responseTime": "< 2 hour(s)",
-            "about": "Experienced in cross-platform mobile app development. I build sleek, user-friendly apps that work perfectly on both iOS and Android.",
-            "skills": [
-                "Firebase",
-                "React Native",
-                "API Integration",
-                "Swift",
-                "Kotlin"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udcf1",
-                    "title": "iOS App Development",
-                    "desc": "Native iOS applications written in Swift."
-                },
-                {
-                    "icon": "\ud83e\udd16",
-                    "title": "Android App Development",
-                    "desc": "High-performance native Android apps using Kotlin."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Mobile App Developer",
-                    "desc": "Delivered multiple successful projects and solutions as a Mobile App Developer."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Mobile App Developer",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/21.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They Android perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/26.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the Android.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Google Developers Certification",
-                    "issuer": "Google",
-                    "year": "2022"
-                },
-                {
-                    "name": "iOS App Development with Swift",
-                    "issuer": "Coursera",
-                    "year": "2021"
-                }
-            ]
-        },
-        {
-            "pid": 5,
-            "name": "Vikram Singh",
-            "role": "Android Developer",
-            "description": "Native Android developer with deep knowledge of modern UI paradigms and performance optimization for mobile applications.",
-            "experience": 7,
-            "contact": "9876500005",
-            "serviceId": 102,
-            "image": "https://randomuser.me/api/portraits/men/24.jpg",
-            "tagline": "Native Android developer with deep knowledge of mo...",
-            "rating": 4.9,
-            "reviewCount": 47,
-            "location": "Mumbai, Maharashtra",
-            "languages": [
-                "English",
-                "Marathi"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b91900 / hr",
-            "email": "vikram.singh@digiseva.in",
-            "completedJobs": 196,
-            "repeatClients": 76,
-            "responseTime": "< 2 hour(s)",
-            "about": "Native Android developer with deep knowledge of modern UI paradigms and performance optimization for mobile applications.",
-            "skills": [
-                "Firebase",
-                "API Integration",
-                "Mobile UI Design",
-                "React Native",
-                "SQLite"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83e\udd16",
-                    "title": "Android App Development",
-                    "desc": "High-performance native Android apps using Kotlin."
-                },
-                {
-                    "icon": "\ud83d\udd04",
-                    "title": "Cross-Platform Apps",
-                    "desc": "Write once, run anywhere with Flutter or React Native."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Android Developer",
-                    "desc": "Delivered multiple successful projects and solutions as a Android Developer."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Android Developer",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They app store launch perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/18.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the mobile app.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Google Developers Certification",
-                    "issuer": "Google",
-                    "year": "2022"
-                },
-                {
-                    "name": "iOS App Development with Swift",
-                    "issuer": "Coursera",
-                    "year": "2021"
-                }
-            ]
-        },
-        {
-            "pid": 6,
-            "name": "Pooja Mehta",
-            "role": "iOS Developer",
-            "description": "Helping businesses reach their customers on the go by designing and developing custom mobile applications tailored to their specific needs.",
-            "experience": 3,
-            "contact": "9876500006",
-            "serviceId": 102,
-            "image": "https://randomuser.me/api/portraits/women/25.jpg",
-            "tagline": "Helping businesses reach their customers on the go...",
-            "rating": 4.7,
-            "reviewCount": 155,
-            "location": "Delhi, NCR",
-            "languages": [
-                "Marathi",
-                "Gujarati"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b9900 / hr",
-            "email": "pooja.mehta@digiseva.in",
-            "completedJobs": 272,
-            "repeatClients": 70,
-            "responseTime": "< 2 hour(s)",
-            "about": "Helping businesses reach their customers on the go by designing and developing custom mobile applications tailored to their specific needs.",
-            "skills": [
-                "Flutter",
-                "Kotlin",
-                "Swift",
-                "React Native",
-                "SQLite"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83e\udd16",
-                    "title": "Android App Development",
-                    "desc": "High-performance native Android apps using Kotlin."
-                },
-                {
-                    "icon": "\ud83d\udcf1",
-                    "title": "iOS App Development",
-                    "desc": "Native iOS applications written in Swift."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior iOS Developer",
-                    "desc": "Delivered multiple successful projects and solutions as a iOS Developer."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior iOS Developer",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/26.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They app store launch perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/29.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the app store launch.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Google Developers Certification",
-                    "issuer": "Google",
-                    "year": "2022"
-                },
-                {
-                    "name": "iOS App Development with Swift",
-                    "issuer": "Coursera",
-                    "year": "2021"
-                }
-            ]
-        },
-        {
-            "pid": 7,
-            "name": "Karan Verma",
-            "role": "Ethical Hacker",
-            "description": "Certified ethical hacker dedicated to securing your web infrastructure, networks, and customer data from modern vulnerabilities.",
-            "experience": 8,
-            "contact": "9876500007",
-            "serviceId": 103,
-            "image": "https://randomuser.me/api/portraits/men/26.jpg",
-            "tagline": "Certified ethical hacker dedicated to securing you...",
-            "rating": 4.8,
-            "reviewCount": 147,
-            "location": "Bengaluru, Karnataka",
-            "languages": [
-                "Hindi",
-                "English"
-            ],
-            "availability": "Busy",
-            "hourlyRate": "\u20b9600 / hr",
-            "email": "karan.verma@digiseva.in",
-            "completedJobs": 79,
-            "repeatClients": 77,
-            "responseTime": "< 3 hour(s)",
-            "about": "Certified ethical hacker dedicated to securing your web infrastructure, networks, and customer data from modern vulnerabilities.",
-            "skills": [
-                "Cryptography",
-                "Vulnerability Scanning",
-                "Python Scripting",
-                "Penetration Testing",
-                "Linux"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udd75\ufe0f",
-                    "title": "Penetration Testing",
-                    "desc": "Ethical hacking to secure your applications."
-                },
-                {
-                    "icon": "\ud83d\udee1\ufe0f",
-                    "title": "Vulnerability Assessment",
-                    "desc": "Identifying security flaws in your infrastructure."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Ethical Hacker",
-                    "desc": "Delivered multiple successful projects and solutions as a Ethical Hacker."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Ethical Hacker",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They penetration testing perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/13.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the security audit.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Ethical Hacker (CEH)",
-                    "issuer": "EC-Council",
-                    "year": "2023"
-                },
-                {
-                    "name": "CompTIA Security+",
-                    "issuer": "CompTIA",
-                    "year": "2020"
-                }
-            ]
-        },
-        {
-            "pid": 8,
-            "name": "Anjali Rao",
-            "role": "Security Consultant",
-            "description": "Expert in penetration testing, threat mitigation, and ensuring strict data privacy standards for small to medium-sized businesses.",
-            "experience": 5,
-            "contact": "9876500008",
-            "serviceId": 103,
-            "image": "https://randomuser.me/api/portraits/women/27.jpg",
-            "tagline": "Expert in penetration testing, threat mitigation, ...",
-            "rating": 5.0,
-            "reviewCount": 158,
-            "location": "Pune, Maharashtra",
-            "languages": [
-                "English",
-                "Marathi"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b91000 / hr",
-            "email": "anjali.rao@digiseva.in",
-            "completedJobs": 62,
-            "repeatClients": 77,
-            "responseTime": "< 2 hour(s)",
-            "about": "Expert in penetration testing, threat mitigation, and ensuring strict data privacy standards for small to medium-sized businesses.",
-            "skills": [
-                "Malware Analysis",
-                "Python Scripting",
-                "Cryptography",
-                "Linux",
-                "Penetration Testing"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udee1\ufe0f",
-                    "title": "Vulnerability Assessment",
-                    "desc": "Identifying security flaws in your infrastructure."
-                },
-                {
-                    "icon": "\ud83d\udd75\ufe0f",
-                    "title": "Penetration Testing",
-                    "desc": "Ethical hacking to secure your applications."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Security Consultant",
-                    "desc": "Delivered multiple successful projects and solutions as a Security Consultant."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Security Consultant",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/12.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They penetration testing perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/19.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the security audit.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Ethical Hacker (CEH)",
-                    "issuer": "EC-Council",
-                    "year": "2023"
-                },
-                {
-                    "name": "CompTIA Security+",
-                    "issuer": "CompTIA",
-                    "year": "2020"
-                }
-            ]
-        },
-        {
-            "pid": 9,
-            "name": "Sanjay Kumar",
-            "role": "Cyber Security Analyst",
-            "description": "I provide comprehensive security audits and implement robust defense strategies to keep your digital assets completely secure.",
-            "experience": 10,
-            "contact": "9876500009",
-            "serviceId": 103,
-            "image": "https://randomuser.me/api/portraits/men/28.jpg",
-            "tagline": "I provide comprehensive security audits and implem...",
-            "rating": 4.9,
-            "reviewCount": 163,
-            "location": "Mumbai, Maharashtra",
-            "languages": [
-                "Marathi",
-                "Gujarati"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b91900 / hr",
-            "email": "sanjay.kumar@digiseva.in",
-            "completedJobs": 276,
-            "repeatClients": 70,
-            "responseTime": "< 1 hour(s)",
-            "about": "I provide comprehensive security audits and implement robust defense strategies to keep your digital assets completely secure.",
-            "skills": [
-                "Linux",
-                "Vulnerability Scanning",
-                "Cryptography",
-                "Python Scripting",
-                "Penetration Testing"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udd75\ufe0f",
-                    "title": "Penetration Testing",
-                    "desc": "Ethical hacking to secure your applications."
-                },
-                {
-                    "icon": "\ud83d\udee1\ufe0f",
-                    "title": "Vulnerability Assessment",
-                    "desc": "Identifying security flaws in your infrastructure."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Cyber Security Analyst",
-                    "desc": "Delivered multiple successful projects and solutions as a Cyber Security Analyst."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Cyber Security Analyst",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/6.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They security audit perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/38.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the penetration testing.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Ethical Hacker (CEH)",
-                    "issuer": "EC-Council",
-                    "year": "2023"
-                },
-                {
-                    "name": "CompTIA Security+",
-                    "issuer": "CompTIA",
-                    "year": "2020"
-                }
-            ]
-        },
-        {
-            "pid": 10,
-            "name": "Riya Shah",
-            "role": "SEO Specialist",
-            "description": "Driving business growth through targeted SEO, highly engaging social media campaigns, and data-backed content strategies.",
-            "experience": 4,
-            "contact": "9876500010",
-            "serviceId": 104,
-            "image": "https://randomuser.me/api/portraits/women/29.jpg",
-            "tagline": "Driving business growth through targeted SEO, high...",
-            "rating": 4.5,
-            "reviewCount": 143,
-            "location": "Delhi, NCR",
-            "languages": [
-                "Hindi",
-                "English"
-            ],
-            "availability": "Busy",
-            "hourlyRate": "\u20b92200 / hr",
-            "email": "riya.shah@digiseva.in",
-            "completedJobs": 114,
-            "repeatClients": 51,
-            "responseTime": "< 4 hour(s)",
-            "about": "Driving business growth through targeted SEO, highly engaging social media campaigns, and data-backed content strategies.",
-            "skills": [
-                "Google Ads",
-                "SEO",
-                "Social Media Strategy",
-                "Content Marketing",
-                "Email Marketing"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udce7",
-                    "title": "Social Media Management",
-                    "desc": "Building your brand presence across all major platforms."
-                },
-                {
-                    "icon": "\ud83c\udfaf",
-                    "title": "Pay-Per-Click Campaigns",
-                    "desc": "Maximizing ROI with targeted ads on Google and Facebook."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior SEO Specialist",
-                    "desc": "Delivered multiple successful projects and solutions as a SEO Specialist."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior SEO Specialist",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/11.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They improved SEO ranking perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/36.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the social media growth.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Google Ads Certification",
-                    "issuer": "Google Skillshop",
-                    "year": "2023"
-                },
-                {
-                    "name": "HubSpot Inbound Marketing",
-                    "issuer": "HubSpot Academy",
-                    "year": "2022"
-                }
-            ]
-        },
-        {
-            "pid": 11,
-            "name": "Manish Tiwari",
-            "role": "PPC Campaign Manager",
-            "description": "Data-driven marketer specializing in Google Ads, paid social media advertising, and maximizing conversion rate optimization.",
-            "experience": 6,
-            "contact": "9876500011",
-            "serviceId": 104,
-            "image": "https://randomuser.me/api/portraits/men/30.jpg",
-            "tagline": "Data-driven marketer specializing in Google Ads, p...",
-            "rating": 4.5,
-            "reviewCount": 152,
-            "location": "Bengaluru, Karnataka",
-            "languages": [
-                "English",
-                "Marathi"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b91100 / hr",
-            "email": "manish.tiwari@digiseva.in",
-            "completedJobs": 308,
-            "repeatClients": 63,
-            "responseTime": "< 1 hour(s)",
-            "about": "Data-driven marketer specializing in Google Ads, paid social media advertising, and maximizing conversion rate optimization.",
-            "skills": [
-                "Social Media Strategy",
-                "Google Analytics",
-                "Content Marketing",
-                "SEO",
-                "Email Marketing"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udce7",
-                    "title": "Social Media Management",
-                    "desc": "Building your brand presence across all major platforms."
-                },
-                {
-                    "icon": "\ud83c\udfaf",
-                    "title": "Pay-Per-Click Campaigns",
-                    "desc": "Maximizing ROI with targeted ads on Google and Facebook."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior PPC Campaign Manager",
-                    "desc": "Delivered multiple successful projects and solutions as a PPC Campaign Manager."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior PPC Campaign Manager",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/23.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They improved SEO ranking perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/8.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the great ad campaigns.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Google Ads Certification",
-                    "issuer": "Google Skillshop",
-                    "year": "2023"
-                },
-                {
-                    "name": "HubSpot Inbound Marketing",
-                    "issuer": "HubSpot Academy",
-                    "year": "2022"
-                }
-            ]
-        },
-        {
-            "pid": 12,
-            "name": "Kavita Reddy",
-            "role": "Digital Strategist",
-            "description": "Building brand presence and engaging local audiences with creative digital campaigns that turn online clicks into real-world customers.",
-            "experience": 3,
-            "contact": "9876500012",
-            "serviceId": 104,
-            "image": "https://randomuser.me/api/portraits/women/31.jpg",
-            "tagline": "Building brand presence and engaging local audienc...",
-            "rating": 4.9,
-            "reviewCount": 69,
-            "location": "Pune, Maharashtra",
-            "languages": [
-                "Marathi",
-                "Gujarati"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b92200 / hr",
-            "email": "kavita.reddy@digiseva.in",
-            "completedJobs": 259,
-            "repeatClients": 69,
-            "responseTime": "< 2 hour(s)",
-            "about": "Building brand presence and engaging local audiences with creative digital campaigns that turn online clicks into real-world customers.",
-            "skills": [
-                "Google Analytics",
-                "Social Media Strategy",
-                "Content Marketing",
-                "Google Ads",
-                "Email Marketing"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udcc8",
-                    "title": "SEO Optimization",
-                    "desc": "Improving your search engine rankings and organic traffic."
-                },
-                {
-                    "icon": "\ud83d\udce7",
-                    "title": "Social Media Management",
-                    "desc": "Building your brand presence across all major platforms."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Digital Strategist",
-                    "desc": "Delivered multiple successful projects and solutions as a Digital Strategist."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Digital Strategist",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/27.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They improved SEO ranking perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/40.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the social media growth.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Google Ads Certification",
-                    "issuer": "Google Skillshop",
-                    "year": "2023"
-                },
-                {
-                    "name": "HubSpot Inbound Marketing",
-                    "issuer": "HubSpot Academy",
-                    "year": "2022"
-                }
-            ]
-        },
-        {
-            "pid": 13,
-            "name": "Sunita Devi",
-            "role": "Deep Cleaning Specialist",
-            "description": "Meticulous and reliable professional offering comprehensive deep cleaning and sanitization services for your home or office.",
-            "experience": 8,
-            "contact": "9876500013",
-            "serviceId": 201,
-            "image": "https://randomuser.me/api/portraits/men/32.jpg",
-            "tagline": "Meticulous and reliable professional offering comp...",
-            "rating": 4.9,
-            "reviewCount": 39,
-            "location": "Mumbai, Maharashtra",
-            "languages": [
-                "Hindi",
-                "English"
-            ],
-            "availability": "Busy",
-            "hourlyRate": "\u20b91300 / hr",
-            "email": "sunita.devi@digiseva.in",
-            "completedJobs": 243,
-            "repeatClients": 79,
-            "responseTime": "< 2 hour(s)",
-            "about": "Meticulous and reliable professional offering comprehensive deep cleaning and sanitization services for your home or office.",
-            "skills": [
-                "Organization",
-                "Deep Cleaning",
-                "Post-Construction Cleanup",
-                "Eco-friendly Products",
-                "Sanitization"
-            ],
-            "services": [
-                {
-                    "icon": "\u2728",
-                    "title": "Move-In / Move-Out Cleaning",
-                    "desc": "Making your new or old home spotless."
-                },
-                {
-                    "icon": "\ud83e\uddf9",
-                    "title": "Deep Home Cleaning",
-                    "desc": "Thorough cleaning of every room, corner to corner."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Deep Cleaning Specialist",
-                    "desc": "Delivered multiple successful projects and solutions as a Deep Cleaning Specialist."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Deep Cleaning Specialist",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/29.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They spotless cleaning perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/39.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the very thorough.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Cleaning Technician",
-                    "issuer": "IICRC",
-                    "year": "2021"
-                },
-                {
-                    "name": "Health & Safety Protocol",
-                    "issuer": "Local Health Authority",
-                    "year": "2022"
-                }
-            ]
-        },
-        {
-            "pid": 14,
-            "name": "Ramesh Yadav",
-            "role": "Residential Cleaner",
-            "description": "Fast, efficient, and trustworthy home cleaning using high-quality, eco-friendly products that are safe for pets and children.",
-            "experience": 4,
-            "contact": "9876500014",
-            "serviceId": 201,
-            "image": "https://randomuser.me/api/portraits/women/33.jpg",
-            "tagline": "Fast, efficient, and trustworthy home cleaning usi...",
-            "rating": 5.0,
-            "reviewCount": 56,
-            "location": "Delhi, NCR",
-            "languages": [
-                "English",
-                "Marathi"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b92000 / hr",
-            "email": "ramesh.yadav@digiseva.in",
-            "completedJobs": 188,
-            "repeatClients": 37,
-            "responseTime": "< 4 hour(s)",
-            "about": "Fast, efficient, and trustworthy home cleaning using high-quality, eco-friendly products that are safe for pets and children.",
-            "skills": [
-                "Sanitization",
-                "Organization",
-                "Post-Construction Cleanup",
-                "Deep Cleaning",
-                "Stain Removal"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83e\uddf9",
-                    "title": "Deep Home Cleaning",
-                    "desc": "Thorough cleaning of every room, corner to corner."
-                },
-                {
-                    "icon": "\u2728",
-                    "title": "Move-In / Move-Out Cleaning",
-                    "desc": "Making your new or old home spotless."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Residential Cleaner",
-                    "desc": "Delivered multiple successful projects and solutions as a Residential Cleaner."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Residential Cleaner",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They friendly and quick perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/11.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the spotless cleaning.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Cleaning Technician",
-                    "issuer": "IICRC",
-                    "year": "2021"
-                },
-                {
-                    "name": "Health & Safety Protocol",
-                    "issuer": "Local Health Authority",
-                    "year": "2022"
-                }
-            ]
-        },
-        {
-            "pid": 15,
-            "name": "Geeta Parmar",
-            "role": "Post-Construction Cleaner",
-            "description": "Specializing in thorough move-in/move-out cleaning, post-construction cleanup, and consistent weekly residential upkeep.",
-            "experience": 6,
-            "contact": "9876500015",
-            "serviceId": 201,
-            "image": "https://randomuser.me/api/portraits/men/34.jpg",
-            "tagline": "Specializing in thorough move-in/move-out cleaning...",
-            "rating": 4.7,
-            "reviewCount": 76,
-            "location": "Bengaluru, Karnataka",
-            "languages": [
-                "Marathi",
-                "Gujarati"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b92300 / hr",
-            "email": "geeta.parmar@digiseva.in",
-            "completedJobs": 179,
-            "repeatClients": 72,
-            "responseTime": "< 3 hour(s)",
-            "about": "Specializing in thorough move-in/move-out cleaning, post-construction cleanup, and consistent weekly residential upkeep.",
-            "skills": [
-                "Organization",
-                "Post-Construction Cleanup",
-                "Deep Cleaning",
-                "Eco-friendly Products",
-                "Sanitization"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83c\udfe2",
-                    "title": "Office Cleaning",
-                    "desc": "Professional sanitization for commercial spaces."
-                },
-                {
-                    "icon": "\ud83e\uddf9",
-                    "title": "Deep Home Cleaning",
-                    "desc": "Thorough cleaning of every room, corner to corner."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Post-Construction Cleaner",
-                    "desc": "Delivered multiple successful projects and solutions as a Post-Construction Cleaner."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Post-Construction Cleaner",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They home looks brand new perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/3.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the home looks brand new.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Cleaning Technician",
-                    "issuer": "IICRC",
-                    "year": "2021"
-                },
-                {
-                    "name": "Health & Safety Protocol",
-                    "issuer": "Local Health Authority",
-                    "year": "2022"
-                }
-            ]
-        },
-        {
-            "pid": 16,
-            "name": "Aakash Mistry",
-            "role": "Theme Decorator",
-            "description": "Transforming ordinary spaces for birthdays, anniversaries, and corporate events with stunning, custom-themed decorations.",
-            "experience": 5,
-            "contact": "9876500016",
-            "serviceId": 202,
-            "image": "https://randomuser.me/api/portraits/women/35.jpg",
-            "tagline": "Transforming ordinary spaces for birthdays, annive...",
-            "rating": 4.5,
-            "reviewCount": 170,
-            "location": "Pune, Maharashtra",
-            "languages": [
-                "Hindi",
-                "English"
-            ],
-            "availability": "Busy",
-            "hourlyRate": "\u20b92300 / hr",
-            "email": "aakash.mistry@digiseva.in",
-            "completedJobs": 277,
-            "repeatClients": 34,
-            "responseTime": "< 1 hour(s)",
-            "about": "Transforming ordinary spaces for birthdays, anniversaries, and corporate events with stunning, custom-themed decorations.",
-            "skills": [
-                "Floral Design",
-                "Theme Conceptualization",
-                "Table Scraping",
-                "Lighting Setup",
-                "Event Planning"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udc90",
-                    "title": "Floral Arrangements",
-                    "desc": "Beautiful fresh or artificial floral setups."
-                },
-                {
-                    "icon": "\ud83c\udf89",
-                    "title": "Party Decoration",
-                    "desc": "Custom themes and decor for birthdays and anniversaries."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Theme Decorator",
-                    "desc": "Delivered multiple successful projects and solutions as a Theme Decorator."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Theme Decorator",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/23.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They beautiful decorations perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/38.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the beautiful decorations.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Event Planner",
-                    "issuer": "Event Planning Association",
-                    "year": "2022"
-                },
-                {
-                    "name": "Advanced Floral Design",
-                    "issuer": "Floral Institute",
-                    "year": "2020"
-                }
-            ]
-        },
-        {
-            "pid": 17,
-            "name": "Priya Chawla",
-            "role": "Event Stylist",
-            "description": "Creative event stylist with a keen eye for beautiful floral arrangements, elegant table settings, and cohesive theme setups.",
-            "experience": 7,
-            "contact": "9876500017",
-            "serviceId": 202,
-            "image": "https://randomuser.me/api/portraits/men/36.jpg",
-            "tagline": "Creative event stylist with a keen eye for beautif...",
-            "rating": 4.5,
-            "reviewCount": 28,
-            "location": "Mumbai, Maharashtra",
-            "languages": [
-                "English",
-                "Marathi"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b9600 / hr",
-            "email": "priya.chawla@digiseva.in",
-            "completedJobs": 331,
-            "repeatClients": 33,
-            "responseTime": "< 3 hour(s)",
-            "about": "Creative event stylist with a keen eye for beautiful floral arrangements, elegant table settings, and cohesive theme setups.",
-            "skills": [
-                "Floral Design",
-                "Balloon Arching",
-                "Table Scraping",
-                "Lighting Setup",
-                "Event Planning"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udca1",
-                    "title": "Ambient Lighting",
-                    "desc": "Creating the perfect mood with professional lighting."
-                },
-                {
-                    "icon": "\ud83d\udc90",
-                    "title": "Floral Arrangements",
-                    "desc": "Beautiful fresh or artificial floral setups."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Event Stylist",
-                    "desc": "Delivered multiple successful projects and solutions as a Event Stylist."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Event Stylist",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/16.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They made the party magical perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/28.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the loved the flowers.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Event Planner",
-                    "issuer": "Event Planning Association",
-                    "year": "2022"
-                },
-                {
-                    "name": "Advanced Floral Design",
-                    "issuer": "Floral Institute",
-                    "year": "2020"
-                }
-            ]
-        },
-        {
-            "pid": 18,
-            "name": "Deepak Patel",
-            "role": "Ambient Lighting Expert",
-            "description": "Making your special moments highly memorable with beautiful ambient lighting, premium balloon arches, and custom backdrops.",
-            "experience": 3,
-            "contact": "9876500018",
-            "serviceId": 202,
-            "image": "https://randomuser.me/api/portraits/women/37.jpg",
-            "tagline": "Making your special moments highly memorable with ...",
-            "rating": 5.0,
-            "reviewCount": 45,
-            "location": "Delhi, NCR",
-            "languages": [
-                "Marathi",
-                "Gujarati"
-            ],
-            "availability": "Available",
-            "hourlyRate": "\u20b92400 / hr",
-            "email": "deepak.patel@digiseva.in",
-            "completedJobs": 91,
-            "repeatClients": 74,
-            "responseTime": "< 2 hour(s)",
-            "about": "Making your special moments highly memorable with beautiful ambient lighting, premium balloon arches, and custom backdrops.",
-            "skills": [
-                "Lighting Setup",
-                "Event Planning",
-                "Theme Conceptualization",
-                "Floral Design",
-                "Balloon Arching"
-            ],
-            "services": [
-                {
-                    "icon": "\ud83d\udca1",
-                    "title": "Ambient Lighting",
-                    "desc": "Creating the perfect mood with professional lighting."
-                },
-                {
-                    "icon": "\ud83c\udf89",
-                    "title": "Party Decoration",
-                    "desc": "Custom themes and decor for birthdays and anniversaries."
-                }
-            ],
-            "experience_timeline": [
-                {
-                    "year": "2020 \u2013 Present",
-                    "company": "Freelance",
-                    "role": "Senior Ambient Lighting Expert",
-                    "desc": "Delivered multiple successful projects and solutions as a Ambient Lighting Expert."
-                },
-                {
-                    "year": "2017 \u2013 2020",
-                    "company": "Local Agency",
-                    "role": "Junior Ambient Lighting Expert",
-                    "desc": "Developed a strong foundation and honed my core skills."
-                }
-            ],
-            "reviews": [
-                {
-                    "name": "Rahul S.",
-                    "avatar": "https://randomuser.me/api/portraits/men/29.jpg",
-                    "rating": 5,
-                    "comment": "Excellent work! They loved the flowers perfectly. Highly recommended!",
-                    "date": "Jan 2025"
-                },
-                {
-                    "name": "Priya M.",
-                    "avatar": "https://randomuser.me/api/portraits/women/20.jpg",
-                    "rating": 4,
-                    "comment": "Very professional. I was happy with the loved the flowers.",
-                    "date": "Dec 2024"
-                }
-            ],
-            "certifications": [
-                {
-                    "name": "Certified Event Planner",
-                    "issuer": "Event Planning Association",
-                    "year": "2022"
-                },
-                {
-                    "name": "Advanced Floral Design",
-                    "issuer": "Floral Institute",
-                    "year": "2020"
-                }
-            ]
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Web Developer",
+          "desc": "Developed a strong foundation and honed my core skills."
         }
-    ]
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/36.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They web app perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/26.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the web app.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Developer",
+          "issuer": "Amazon Web Services",
+          "year": "2023"
+        },
+        {
+          "name": "Full Stack Web Certification",
+          "issuer": "freeCodeCamp",
+          "year": "2021"
+        }
+      ],
+      "id": "a487",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 2,
+      "name": "Neha Gupta",
+      "role": "Full-Stack Developer",
+      "description": "Full-stack developer with a passion for creating seamless e-commerce experiences and highly interactive web applications.",
+      "experience": 6,
+      "contact": "9876500002",
+      "serviceId": 101,
+      "image": "https://randomuser.me/api/portraits/women/25.jpg",
+      "tagline": "Full-stack developer with a passion for creating s...",
+      "rating": 4.7,
+      "reviewCount": 120,
+      "location": "Delhi, NCR",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹500 / hr",
+      "email": "neha.gupta@digiseva.in",
+      "completedJobs": 248,
+      "repeatClients": 37,
+      "responseTime": "< 4 hour(s)",
+      "about": "Full-stack developer with a passion for creating seamless e-commerce experiences and highly interactive web applications.",
+      "skills": [
+        "MongoDB",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "GraphQL"
+      ],
+      "services": [
+        {
+          "icon": "🚀",
+          "title": "Performance Optimization",
+          "desc": "Speeding up your web apps for better UX and SEO."
+        },
+        {
+          "icon": "🖥️",
+          "title": "Web App Development",
+          "desc": "End-to-end custom web applications using modern frameworks."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Full-Stack Developer",
+          "desc": "Delivered multiple successful projects and solutions as a Full-Stack Developer."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Full-Stack Developer",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/21.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They website perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/5.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the React dashboard.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Developer",
+          "issuer": "Amazon Web Services",
+          "year": "2023"
+        },
+        {
+          "name": "Full Stack Web Certification",
+          "issuer": "freeCodeCamp",
+          "year": "2021"
+        }
+      ],
+      "id": "40ce",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 3,
+      "name": "Rohan Desai",
+      "role": "Frontend Specialist",
+      "description": "Frontend expert focusing on fast, accessible, and visually appealing web interfaces that drive customer engagement.",
+      "experience": 2,
+      "contact": "9876500003",
+      "serviceId": 101,
+      "image": "https://randomuser.me/api/portraits/men/22.jpg",
+      "tagline": "Frontend expert focusing on fast, accessible, and ...",
+      "rating": 4.9,
+      "reviewCount": 28,
+      "location": "Bengaluru, Karnataka",
+      "languages": [
+        "Marathi",
+        "Gujarati"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹800 / hr",
+      "email": "rohan.desai@digiseva.in",
+      "completedJobs": 229,
+      "repeatClients": 65,
+      "responseTime": "< 2 hour(s)",
+      "about": "Frontend expert focusing on fast, accessible, and visually appealing web interfaces that drive customer engagement.",
+      "skills": [
+        "Node.js",
+        "AWS",
+        "GraphQL",
+        "Next.js",
+        "Tailwind CSS"
+      ],
+      "services": [
+        {
+          "icon": "🚀",
+          "title": "Performance Optimization",
+          "desc": "Speeding up your web apps for better UX and SEO."
+        },
+        {
+          "icon": "☁️",
+          "title": "Backend Development",
+          "desc": "Scalable REST APIs and robust database architecture."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Frontend Specialist",
+          "desc": "Delivered multiple successful projects and solutions as a Frontend Specialist."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Frontend Specialist",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/37.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They code quality perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/1.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the code quality.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Developer",
+          "issuer": "Amazon Web Services",
+          "year": "2023"
+        },
+        {
+          "name": "Full Stack Web Certification",
+          "issuer": "freeCodeCamp",
+          "year": "2021"
+        }
+      ],
+      "id": "ac9b",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 4,
+      "name": "Sneha Joshi",
+      "role": "Mobile App Developer",
+      "description": "Experienced in cross-platform mobile app development. I build sleek, user-friendly apps that work perfectly on both iOS and Android.",
+      "experience": 5,
+      "contact": "9876500004",
+      "serviceId": 102,
+      "image": "https://randomuser.me/api/portraits/women/23.jpg",
+      "tagline": "Experienced in cross-platform mobile app developme...",
+      "rating": 4.6,
+      "reviewCount": 102,
+      "location": "Pune, Maharashtra",
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "availability": "Busy",
+      "hourlyRate": "₹500 / hr",
+      "email": "sneha.joshi@digiseva.in",
+      "completedJobs": 123,
+      "repeatClients": 77,
+      "responseTime": "< 2 hour(s)",
+      "about": "Experienced in cross-platform mobile app development. I build sleek, user-friendly apps that work perfectly on both iOS and Android.",
+      "skills": [
+        "Firebase",
+        "React Native",
+        "API Integration",
+        "Swift",
+        "Kotlin"
+      ],
+      "services": [
+        {
+          "icon": "📱",
+          "title": "iOS App Development",
+          "desc": "Native iOS applications written in Swift."
+        },
+        {
+          "icon": "🤖",
+          "title": "Android App Development",
+          "desc": "High-performance native Android apps using Kotlin."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Mobile App Developer",
+          "desc": "Delivered multiple successful projects and solutions as a Mobile App Developer."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Mobile App Developer",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/21.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They Android perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/26.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the Android.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Google Developers Certification",
+          "issuer": "Google",
+          "year": "2022"
+        },
+        {
+          "name": "iOS App Development with Swift",
+          "issuer": "Coursera",
+          "year": "2021"
+        }
+      ],
+      "id": "7653",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 5,
+      "name": "Vikram Singh",
+      "role": "Android Developer",
+      "description": "Native Android developer with deep knowledge of modern UI paradigms and performance optimization for mobile applications.",
+      "experience": 7,
+      "contact": "9876500005",
+      "serviceId": 102,
+      "image": "https://randomuser.me/api/portraits/men/24.jpg",
+      "tagline": "Native Android developer with deep knowledge of mo...",
+      "rating": 4.9,
+      "reviewCount": 47,
+      "location": "Mumbai, Maharashtra",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹1900 / hr",
+      "email": "vikram.singh@digiseva.in",
+      "completedJobs": 196,
+      "repeatClients": 76,
+      "responseTime": "< 2 hour(s)",
+      "about": "Native Android developer with deep knowledge of modern UI paradigms and performance optimization for mobile applications.",
+      "skills": [
+        "Firebase",
+        "API Integration",
+        "Mobile UI Design",
+        "React Native",
+        "SQLite"
+      ],
+      "services": [
+        {
+          "icon": "🤖",
+          "title": "Android App Development",
+          "desc": "High-performance native Android apps using Kotlin."
+        },
+        {
+          "icon": "🔄",
+          "title": "Cross-Platform Apps",
+          "desc": "Write once, run anywhere with Flutter or React Native."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Android Developer",
+          "desc": "Delivered multiple successful projects and solutions as a Android Developer."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Android Developer",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They app store launch perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/18.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the mobile app.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Google Developers Certification",
+          "issuer": "Google",
+          "year": "2022"
+        },
+        {
+          "name": "iOS App Development with Swift",
+          "issuer": "Coursera",
+          "year": "2021"
+        }
+      ],
+      "id": "9542",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 6,
+      "name": "Pooja Mehta",
+      "role": "iOS Developer",
+      "description": "Helping businesses reach their customers on the go by designing and developing custom mobile applications tailored to their specific needs.",
+      "experience": 3,
+      "contact": "9876500006",
+      "serviceId": 102,
+      "image": "https://randomuser.me/api/portraits/women/25.jpg",
+      "tagline": "Helping businesses reach their customers on the go...",
+      "rating": 4.7,
+      "reviewCount": 155,
+      "location": "Delhi, NCR",
+      "languages": [
+        "Marathi",
+        "Gujarati"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹900 / hr",
+      "email": "pooja.mehta@digiseva.in",
+      "completedJobs": 272,
+      "repeatClients": 70,
+      "responseTime": "< 2 hour(s)",
+      "about": "Helping businesses reach their customers on the go by designing and developing custom mobile applications tailored to their specific needs.",
+      "skills": [
+        "Flutter",
+        "Kotlin",
+        "Swift",
+        "React Native",
+        "SQLite"
+      ],
+      "services": [
+        {
+          "icon": "🤖",
+          "title": "Android App Development",
+          "desc": "High-performance native Android apps using Kotlin."
+        },
+        {
+          "icon": "📱",
+          "title": "iOS App Development",
+          "desc": "Native iOS applications written in Swift."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior iOS Developer",
+          "desc": "Delivered multiple successful projects and solutions as a iOS Developer."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior iOS Developer",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/26.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They app store launch perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/29.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the app store launch.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Google Developers Certification",
+          "issuer": "Google",
+          "year": "2022"
+        },
+        {
+          "name": "iOS App Development with Swift",
+          "issuer": "Coursera",
+          "year": "2021"
+        }
+      ],
+      "id": "2e41",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 7,
+      "name": "Karan Verma",
+      "role": "Ethical Hacker",
+      "description": "Certified ethical hacker dedicated to securing your web infrastructure, networks, and customer data from modern vulnerabilities.",
+      "experience": 8,
+      "contact": "9876500007",
+      "serviceId": 103,
+      "image": "https://randomuser.me/api/portraits/men/26.jpg",
+      "tagline": "Certified ethical hacker dedicated to securing you...",
+      "rating": 4.8,
+      "reviewCount": 147,
+      "location": "Bengaluru, Karnataka",
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "availability": "Busy",
+      "hourlyRate": "₹600 / hr",
+      "email": "karan.verma@digiseva.in",
+      "completedJobs": 79,
+      "repeatClients": 77,
+      "responseTime": "< 3 hour(s)",
+      "about": "Certified ethical hacker dedicated to securing your web infrastructure, networks, and customer data from modern vulnerabilities.",
+      "skills": [
+        "Cryptography",
+        "Vulnerability Scanning",
+        "Python Scripting",
+        "Penetration Testing",
+        "Linux"
+      ],
+      "services": [
+        {
+          "icon": "🕵️",
+          "title": "Penetration Testing",
+          "desc": "Ethical hacking to secure your applications."
+        },
+        {
+          "icon": "🛡️",
+          "title": "Vulnerability Assessment",
+          "desc": "Identifying security flaws in your infrastructure."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Ethical Hacker",
+          "desc": "Delivered multiple successful projects and solutions as a Ethical Hacker."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Ethical Hacker",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They penetration testing perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/13.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the security audit.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Ethical Hacker (CEH)",
+          "issuer": "EC-Council",
+          "year": "2023"
+        },
+        {
+          "name": "CompTIA Security+",
+          "issuer": "CompTIA",
+          "year": "2020"
+        }
+      ],
+      "id": "a23a",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 8,
+      "name": "Anjali Rao",
+      "role": "Security Consultant",
+      "description": "Expert in penetration testing, threat mitigation, and ensuring strict data privacy standards for small to medium-sized businesses.",
+      "experience": 5,
+      "contact": "9876500008",
+      "serviceId": 103,
+      "image": "https://randomuser.me/api/portraits/women/27.jpg",
+      "tagline": "Expert in penetration testing, threat mitigation, ...",
+      "rating": 5,
+      "reviewCount": 158,
+      "location": "Pune, Maharashtra",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹1000 / hr",
+      "email": "anjali.rao@digiseva.in",
+      "completedJobs": 62,
+      "repeatClients": 77,
+      "responseTime": "< 2 hour(s)",
+      "about": "Expert in penetration testing, threat mitigation, and ensuring strict data privacy standards for small to medium-sized businesses.",
+      "skills": [
+        "Malware Analysis",
+        "Python Scripting",
+        "Cryptography",
+        "Linux",
+        "Penetration Testing"
+      ],
+      "services": [
+        {
+          "icon": "🛡️",
+          "title": "Vulnerability Assessment",
+          "desc": "Identifying security flaws in your infrastructure."
+        },
+        {
+          "icon": "🕵️",
+          "title": "Penetration Testing",
+          "desc": "Ethical hacking to secure your applications."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Security Consultant",
+          "desc": "Delivered multiple successful projects and solutions as a Security Consultant."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Security Consultant",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/12.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They penetration testing perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/19.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the security audit.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Ethical Hacker (CEH)",
+          "issuer": "EC-Council",
+          "year": "2023"
+        },
+        {
+          "name": "CompTIA Security+",
+          "issuer": "CompTIA",
+          "year": "2020"
+        }
+      ],
+      "id": "5302",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 9,
+      "name": "Sanjay Kumar",
+      "role": "Cyber Security Analyst",
+      "description": "I provide comprehensive security audits and implement robust defense strategies to keep your digital assets completely secure.",
+      "experience": 10,
+      "contact": "9876500009",
+      "serviceId": 103,
+      "image": "https://randomuser.me/api/portraits/men/28.jpg",
+      "tagline": "I provide comprehensive security audits and implem...",
+      "rating": 4.9,
+      "reviewCount": 163,
+      "location": "Mumbai, Maharashtra",
+      "languages": [
+        "Marathi",
+        "Gujarati"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹1900 / hr",
+      "email": "sanjay.kumar@digiseva.in",
+      "completedJobs": 276,
+      "repeatClients": 70,
+      "responseTime": "< 1 hour(s)",
+      "about": "I provide comprehensive security audits and implement robust defense strategies to keep your digital assets completely secure.",
+      "skills": [
+        "Linux",
+        "Vulnerability Scanning",
+        "Cryptography",
+        "Python Scripting",
+        "Penetration Testing"
+      ],
+      "services": [
+        {
+          "icon": "🕵️",
+          "title": "Penetration Testing",
+          "desc": "Ethical hacking to secure your applications."
+        },
+        {
+          "icon": "🛡️",
+          "title": "Vulnerability Assessment",
+          "desc": "Identifying security flaws in your infrastructure."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Cyber Security Analyst",
+          "desc": "Delivered multiple successful projects and solutions as a Cyber Security Analyst."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Cyber Security Analyst",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/6.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They security audit perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/38.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the penetration testing.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Ethical Hacker (CEH)",
+          "issuer": "EC-Council",
+          "year": "2023"
+        },
+        {
+          "name": "CompTIA Security+",
+          "issuer": "CompTIA",
+          "year": "2020"
+        }
+      ],
+      "id": "65eb",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 10,
+      "name": "Riya Shah",
+      "role": "SEO Specialist",
+      "description": "Driving business growth through targeted SEO, highly engaging social media campaigns, and data-backed content strategies.",
+      "experience": 4,
+      "contact": "9876500010",
+      "serviceId": 104,
+      "image": "https://randomuser.me/api/portraits/women/29.jpg",
+      "tagline": "Driving business growth through targeted SEO, high...",
+      "rating": 4.5,
+      "reviewCount": 143,
+      "location": "Delhi, NCR",
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "availability": "Busy",
+      "hourlyRate": "₹2200 / hr",
+      "email": "riya.shah@digiseva.in",
+      "completedJobs": 114,
+      "repeatClients": 51,
+      "responseTime": "< 4 hour(s)",
+      "about": "Driving business growth through targeted SEO, highly engaging social media campaigns, and data-backed content strategies.",
+      "skills": [
+        "Google Ads",
+        "SEO",
+        "Social Media Strategy",
+        "Content Marketing",
+        "Email Marketing"
+      ],
+      "services": [
+        {
+          "icon": "📧",
+          "title": "Social Media Management",
+          "desc": "Building your brand presence across all major platforms."
+        },
+        {
+          "icon": "🎯",
+          "title": "Pay-Per-Click Campaigns",
+          "desc": "Maximizing ROI with targeted ads on Google and Facebook."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior SEO Specialist",
+          "desc": "Delivered multiple successful projects and solutions as a SEO Specialist."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior SEO Specialist",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/11.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They improved SEO ranking perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/36.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the social media growth.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Google Ads Certification",
+          "issuer": "Google Skillshop",
+          "year": "2023"
+        },
+        {
+          "name": "HubSpot Inbound Marketing",
+          "issuer": "HubSpot Academy",
+          "year": "2022"
+        }
+      ],
+      "id": "cd41",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 11,
+      "name": "Manish Tiwari",
+      "role": "PPC Campaign Manager",
+      "description": "Data-driven marketer specializing in Google Ads, paid social media advertising, and maximizing conversion rate optimization.",
+      "experience": 6,
+      "contact": "9876500011",
+      "serviceId": 104,
+      "image": "https://randomuser.me/api/portraits/men/30.jpg",
+      "tagline": "Data-driven marketer specializing in Google Ads, p...",
+      "rating": 4.5,
+      "reviewCount": 152,
+      "location": "Bengaluru, Karnataka",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹1100 / hr",
+      "email": "manish.tiwari@digiseva.in",
+      "completedJobs": 308,
+      "repeatClients": 63,
+      "responseTime": "< 1 hour(s)",
+      "about": "Data-driven marketer specializing in Google Ads, paid social media advertising, and maximizing conversion rate optimization.",
+      "skills": [
+        "Social Media Strategy",
+        "Google Analytics",
+        "Content Marketing",
+        "SEO",
+        "Email Marketing"
+      ],
+      "services": [
+        {
+          "icon": "📧",
+          "title": "Social Media Management",
+          "desc": "Building your brand presence across all major platforms."
+        },
+        {
+          "icon": "🎯",
+          "title": "Pay-Per-Click Campaigns",
+          "desc": "Maximizing ROI with targeted ads on Google and Facebook."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior PPC Campaign Manager",
+          "desc": "Delivered multiple successful projects and solutions as a PPC Campaign Manager."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior PPC Campaign Manager",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/23.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They improved SEO ranking perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the great ad campaigns.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Google Ads Certification",
+          "issuer": "Google Skillshop",
+          "year": "2023"
+        },
+        {
+          "name": "HubSpot Inbound Marketing",
+          "issuer": "HubSpot Academy",
+          "year": "2022"
+        }
+      ],
+      "id": "2436",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 12,
+      "name": "Kavita Reddy",
+      "role": "Digital Strategist",
+      "description": "Building brand presence and engaging local audiences with creative digital campaigns that turn online clicks into real-world customers.",
+      "experience": 3,
+      "contact": "9876500012",
+      "serviceId": 104,
+      "image": "https://randomuser.me/api/portraits/women/31.jpg",
+      "tagline": "Building brand presence and engaging local audienc...",
+      "rating": 4.9,
+      "reviewCount": 69,
+      "location": "Pune, Maharashtra",
+      "languages": [
+        "Marathi",
+        "Gujarati"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹2200 / hr",
+      "email": "kavita.reddy@digiseva.in",
+      "completedJobs": 259,
+      "repeatClients": 69,
+      "responseTime": "< 2 hour(s)",
+      "about": "Building brand presence and engaging local audiences with creative digital campaigns that turn online clicks into real-world customers.",
+      "skills": [
+        "Google Analytics",
+        "Social Media Strategy",
+        "Content Marketing",
+        "Google Ads",
+        "Email Marketing"
+      ],
+      "services": [
+        {
+          "icon": "📈",
+          "title": "SEO Optimization",
+          "desc": "Improving your search engine rankings and organic traffic."
+        },
+        {
+          "icon": "📧",
+          "title": "Social Media Management",
+          "desc": "Building your brand presence across all major platforms."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Digital Strategist",
+          "desc": "Delivered multiple successful projects and solutions as a Digital Strategist."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Digital Strategist",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/27.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They improved SEO ranking perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/40.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the social media growth.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Google Ads Certification",
+          "issuer": "Google Skillshop",
+          "year": "2023"
+        },
+        {
+          "name": "HubSpot Inbound Marketing",
+          "issuer": "HubSpot Academy",
+          "year": "2022"
+        }
+      ],
+      "id": "1a72",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 13,
+      "name": "Sunita Devi",
+      "role": "Deep Cleaning Specialist",
+      "description": "Meticulous and reliable professional offering comprehensive deep cleaning and sanitization services for your home or office.",
+      "experience": 8,
+      "contact": "9876500013",
+      "serviceId": 201,
+      "image": "https://randomuser.me/api/portraits/women/32.jpg",
+      "tagline": "Meticulous and reliable professional offering comp...",
+      "rating": 4.9,
+      "reviewCount": 39,
+      "location": "Mumbai, Maharashtra",
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "availability": "Busy",
+      "hourlyRate": "₹1300 / hr",
+      "email": "sunita.devi@digiseva.in",
+      "completedJobs": 243,
+      "repeatClients": 79,
+      "responseTime": "< 2 hour(s)",
+      "about": "Meticulous and reliable professional offering comprehensive deep cleaning and sanitization services for your home or office.",
+      "skills": [
+        "Organization",
+        "Deep Cleaning",
+        "Post-Construction Cleanup",
+        "Eco-friendly Products",
+        "Sanitization"
+      ],
+      "services": [
+        {
+          "icon": "✨",
+          "title": "Move-In / Move-Out Cleaning",
+          "desc": "Making your new or old home spotless."
+        },
+        {
+          "icon": "🧹",
+          "title": "Deep Home Cleaning",
+          "desc": "Thorough cleaning of every room, corner to corner."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Deep Cleaning Specialist",
+          "desc": "Delivered multiple successful projects and solutions as a Deep Cleaning Specialist."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Deep Cleaning Specialist",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/29.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They spotless cleaning perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/39.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the very thorough.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Cleaning Technician",
+          "issuer": "IICRC",
+          "year": "2021"
+        },
+        {
+          "name": "Health & Safety Protocol",
+          "issuer": "Local Health Authority",
+          "year": "2022"
+        }
+      ],
+      "id": "dfd3",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 14,
+      "name": "Ramesh Yadav",
+      "role": "Residential Cleaner",
+      "description": "Fast, efficient, and trustworthy home cleaning using high-quality, eco-friendly products that are safe for pets and children.",
+      "experience": 4,
+      "contact": "9876500014",
+      "serviceId": 201,
+      "image": "https://randomuser.me/api/portraits/men/33.jpg",
+      "tagline": "Fast, efficient, and trustworthy home cleaning usi...",
+      "rating": 5,
+      "reviewCount": 56,
+      "location": "Delhi, NCR",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹2000 / hr",
+      "email": "ramesh.yadav@digiseva.in",
+      "completedJobs": 188,
+      "repeatClients": 37,
+      "responseTime": "< 4 hour(s)",
+      "about": "Fast, efficient, and trustworthy home cleaning using high-quality, eco-friendly products that are safe for pets and children.",
+      "skills": [
+        "Sanitization",
+        "Organization",
+        "Post-Construction Cleanup",
+        "Deep Cleaning",
+        "Stain Removal"
+      ],
+      "services": [
+        {
+          "icon": "🧹",
+          "title": "Deep Home Cleaning",
+          "desc": "Thorough cleaning of every room, corner to corner."
+        },
+        {
+          "icon": "✨",
+          "title": "Move-In / Move-Out Cleaning",
+          "desc": "Making your new or old home spotless."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Residential Cleaner",
+          "desc": "Delivered multiple successful projects and solutions as a Residential Cleaner."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Residential Cleaner",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They friendly and quick perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/11.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the spotless cleaning.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Cleaning Technician",
+          "issuer": "IICRC",
+          "year": "2021"
+        },
+        {
+          "name": "Health & Safety Protocol",
+          "issuer": "Local Health Authority",
+          "year": "2022"
+        }
+      ],
+      "id": "92f1",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 15,
+      "name": "Geeta Parmar",
+      "role": "Post-Construction Cleaner",
+      "description": "Specializing in thorough move-in/move-out cleaning, post-construction cleanup, and consistent weekly residential upkeep.",
+      "experience": 6,
+      "contact": "9876500015",
+      "serviceId": 201,
+      "image": "https://randomuser.me/api/portraits/women/37.jpg",
+      "tagline": "Specializing in thorough move-in/move-out cleaning...",
+      "rating": 4.7,
+      "reviewCount": 76,
+      "location": "Bengaluru, Karnataka",
+      "languages": [
+        "Marathi",
+        "Gujarati"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹2300 / hr",
+      "email": "geeta.parmar@digiseva.in",
+      "completedJobs": 179,
+      "repeatClients": 72,
+      "responseTime": "< 3 hour(s)",
+      "about": "Specializing in thorough move-in/move-out cleaning, post-construction cleanup, and consistent weekly residential upkeep.",
+      "skills": [
+        "Organization",
+        "Post-Construction Cleanup",
+        "Deep Cleaning",
+        "Eco-friendly Products",
+        "Sanitization"
+      ],
+      "services": [
+        {
+          "icon": "🏢",
+          "title": "Office Cleaning",
+          "desc": "Professional sanitization for commercial spaces."
+        },
+        {
+          "icon": "🧹",
+          "title": "Deep Home Cleaning",
+          "desc": "Thorough cleaning of every room, corner to corner."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Post-Construction Cleaner",
+          "desc": "Delivered multiple successful projects and solutions as a Post-Construction Cleaner."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Post-Construction Cleaner",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They home looks brand new perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/3.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the home looks brand new.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Cleaning Technician",
+          "issuer": "IICRC",
+          "year": "2021"
+        },
+        {
+          "name": "Health & Safety Protocol",
+          "issuer": "Local Health Authority",
+          "year": "2022"
+        }
+      ],
+      "id": "12a8",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 16,
+      "name": "Aakash Mistry",
+      "role": "Theme Decorator",
+      "description": "Transforming ordinary spaces for birthdays, anniversaries, and corporate events with stunning, custom-themed decorations.",
+      "experience": 5,
+      "contact": "9876500016",
+      "serviceId": 202,
+      "image": "https://randomuser.me/api/portraits/women/35.jpg",
+      "tagline": "Transforming ordinary spaces for birthdays, annive...",
+      "rating": 4.5,
+      "reviewCount": 170,
+      "location": "Pune, Maharashtra",
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "availability": "Busy",
+      "hourlyRate": "₹2300 / hr",
+      "email": "aakash.mistry@digiseva.in",
+      "completedJobs": 277,
+      "repeatClients": 34,
+      "responseTime": "< 1 hour(s)",
+      "about": "Transforming ordinary spaces for birthdays, anniversaries, and corporate events with stunning, custom-themed decorations.",
+      "skills": [
+        "Floral Design",
+        "Theme Conceptualization",
+        "Table Scraping",
+        "Lighting Setup",
+        "Event Planning"
+      ],
+      "services": [
+        {
+          "icon": "💐",
+          "title": "Floral Arrangements",
+          "desc": "Beautiful fresh or artificial floral setups."
+        },
+        {
+          "icon": "🎉",
+          "title": "Party Decoration",
+          "desc": "Custom themes and decor for birthdays and anniversaries."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Theme Decorator",
+          "desc": "Delivered multiple successful projects and solutions as a Theme Decorator."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Theme Decorator",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/23.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They beautiful decorations perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/38.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the beautiful decorations.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Event Planner",
+          "issuer": "Event Planning Association",
+          "year": "2022"
+        },
+        {
+          "name": "Advanced Floral Design",
+          "issuer": "Floral Institute",
+          "year": "2020"
+        }
+      ],
+      "id": "4d4e",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 17,
+      "name": "Priya Chawla",
+      "role": "Event Stylist",
+      "description": "Creative event stylist with a keen eye for beautiful floral arrangements, elegant table settings, and cohesive theme setups.",
+      "experience": 7,
+      "contact": "9876500017",
+      "serviceId": 202,
+      "image": "https://randomuser.me/api/portraits/men/36.jpg",
+      "tagline": "Creative event stylist with a keen eye for beautif...",
+      "rating": 4.5,
+      "reviewCount": 28,
+      "location": "Mumbai, Maharashtra",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹600 / hr",
+      "email": "priya.chawla@digiseva.in",
+      "completedJobs": 331,
+      "repeatClients": 33,
+      "responseTime": "< 3 hour(s)",
+      "about": "Creative event stylist with a keen eye for beautiful floral arrangements, elegant table settings, and cohesive theme setups.",
+      "skills": [
+        "Floral Design",
+        "Balloon Arching",
+        "Table Scraping",
+        "Lighting Setup",
+        "Event Planning"
+      ],
+      "services": [
+        {
+          "icon": "💡",
+          "title": "Ambient Lighting",
+          "desc": "Creating the perfect mood with professional lighting."
+        },
+        {
+          "icon": "💐",
+          "title": "Floral Arrangements",
+          "desc": "Beautiful fresh or artificial floral setups."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Event Stylist",
+          "desc": "Delivered multiple successful projects and solutions as a Event Stylist."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Event Stylist",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/16.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They made the party magical perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/28.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the loved the flowers.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Event Planner",
+          "issuer": "Event Planning Association",
+          "year": "2022"
+        },
+        {
+          "name": "Advanced Floral Design",
+          "issuer": "Floral Institute",
+          "year": "2020"
+        }
+      ],
+      "id": "4745",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "pid": 18,
+      "name": "Deepak Patel",
+      "role": "Ambient Lighting Expert",
+      "description": "Making your special moments highly memorable with beautiful ambient lighting, premium balloon arches, and custom backdrops.",
+      "experience": 3,
+      "contact": "9876500018",
+      "serviceId": 202,
+      "image": "https://randomuser.me/api/portraits/women/37.jpg",
+      "tagline": "Making your special moments highly memorable with ...",
+      "rating": 5,
+      "reviewCount": 45,
+      "location": "Delhi, NCR",
+      "languages": [
+        "Marathi",
+        "Gujarati"
+      ],
+      "availability": "Available",
+      "hourlyRate": "₹2400 / hr",
+      "email": "deepak.patel@digiseva.in",
+      "completedJobs": 91,
+      "repeatClients": 74,
+      "responseTime": "< 2 hour(s)",
+      "about": "Making your special moments highly memorable with beautiful ambient lighting, premium balloon arches, and custom backdrops.",
+      "skills": [
+        "Lighting Setup",
+        "Event Planning",
+        "Theme Conceptualization",
+        "Floral Design",
+        "Balloon Arching"
+      ],
+      "services": [
+        {
+          "icon": "💡",
+          "title": "Ambient Lighting",
+          "desc": "Creating the perfect mood with professional lighting."
+        },
+        {
+          "icon": "🎉",
+          "title": "Party Decoration",
+          "desc": "Custom themes and decor for birthdays and anniversaries."
+        }
+      ],
+      "experience_timeline": [
+        {
+          "year": "2020 – Present",
+          "company": "Freelance",
+          "role": "Senior Ambient Lighting Expert",
+          "desc": "Delivered multiple successful projects and solutions as a Ambient Lighting Expert."
+        },
+        {
+          "year": "2017 – 2020",
+          "company": "Local Agency",
+          "role": "Junior Ambient Lighting Expert",
+          "desc": "Developed a strong foundation and honed my core skills."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rahul S.",
+          "avatar": "https://randomuser.me/api/portraits/men/29.jpg",
+          "rating": 5,
+          "comment": "Excellent work! They loved the flowers perfectly. Highly recommended!",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Priya M.",
+          "avatar": "https://randomuser.me/api/portraits/women/20.jpg",
+          "rating": 4,
+          "comment": "Very professional. I was happy with the loved the flowers.",
+          "date": "Dec 2024"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Event Planner",
+          "issuer": "Event Planning Association",
+          "year": "2022"
+        },
+        {
+          "name": "Advanced Floral Design",
+          "issuer": "Floral Institute",
+          "year": "2020"
+        }
+      ],
+      "id": "ca60",
+      "password": "provider123",
+      "status": "approved"
+    },
+    {
+      "id": "test-prov-1",
+      "name": "Rahul Dev",
+      "email": "rahul@test.com",
+      "password": "test1234",
+      "role": "provider",
+      "status": "approved",
+      "profile": {
+        "fullName": "Rahul Dev",
+        "title": "Full Stack Developer",
+        "experience": 5,
+        "expertise": [
+          "Web Development",
+          "React",
+          "Node.js"
+        ],
+        "bio": "Experienced full-stack developer with 5 years of experience building modern web applications.",
+        "phone": "+91 9876543210",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "languages": [
+          "English",
+          "Hindi",
+          "Kannada"
+        ],
+        "photoName": null
+      },
+      "qualifications": {
+        "education": "Bachelor's Degree",
+        "certifications": "AWS Certified Developer, Google Analytics",
+        "resumeFiles": [],
+        "certificationFiles": [],
+        "additionalFiles": []
+      },
+      "createdAt": "2026-01-15T10:30:00.000Z"
+    },
+    {
+      "id": "test-prov-2",
+      "name": "Sneha Design",
+      "email": "sneha@test.com",
+      "password": "test1234",
+      "role": "provider",
+      "status": "approved",
+      "profile": {
+        "fullName": "Sneha Design",
+        "title": "UI/UX Designer",
+        "experience": 3,
+        "expertise": [
+          "UI/UX Design",
+          "Graphic Design",
+          "Figma"
+        ],
+        "bio": "Creative UI/UX designer passionate about crafting beautiful and intuitive user experiences.",
+        "phone": "+91 9123456789",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "languages": [
+          "English",
+          "Hindi",
+          "Marathi"
+        ],
+        "photoName": null
+      },
+      "qualifications": {
+        "education": "Master's Degree",
+        "certifications": "Google UX Design Certificate",
+        "resumeFiles": [],
+        "certificationFiles": [],
+        "additionalFiles": []
+      },
+      "createdAt": "2026-02-01T09:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Nirmal",
+      "email": "client@example.com",
+      "password": "password123",
+      "role": "client"
+    },
+    {
+      "id": "2",
+      "name": "Provider User",
+      "email": "provider@example.com",
+      "password": "password123",
+      "role": "provider"
+    },
+    {
+      "id": "3",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "password123",
+      "role": "admin"
+    },
+    {
+      "id": "1774659985302",
+      "name": "Nirmal",
+      "email": "nirmal103050@gmail.com",
+      "password": "nirmal2468",
+      "role": "client"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -3,7 +3,7 @@ import './Home.css';
 
 function AboutUs() {
   return (
-    <section className="about-us-section container mt-5 mb-5">
+    <section id="about" className="about-us-section container mt-5 mb-5">
       <div className="about-us-container">
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">

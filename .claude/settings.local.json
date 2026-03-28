@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json; d=json.load\\(open\\(''C:/Users/ASUS/Desktop/DiGiSeva/db.json''\\)\\); print\\(''Keys:'', list\\(d.keys\\(\\)\\)\\); print\\(''Users count:'', len\\(d.get\\(''users'',[]\\)\\)\\); print\\(''Providers count:'', len\\(d.get\\(''providers'',[]\\)\\)\\);print\\(''Users:'', json.dumps\\(d.get\\(''users'',[]\\)[:3], indent=2\\)\\)\")",
+      "Bash(python -c \"import json; d=json.load\\(open\\(''C:/Users/ASUS/Desktop/DiGiSeva/db.json'', encoding=''utf-8''\\)\\); print\\(''Keys:'', list\\(d.keys\\(\\)\\)\\); print\\(''Users:'', json.dumps\\(d.get\\(''users'',[]\\), indent=2\\)\\)\")"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import NavBar from '../../components/Navigation/NavigationBar'
 import Footer from '../../components/Footer/Footer'
 import './AuthPage.css'
@@ -32,6 +32,7 @@ const EyeIcon = ({ open }) => open ? (
 )
 
 const AuthPage = () => {
+    const navigate = useNavigate()
     const [role, setRole] = useState('client')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -39,14 +40,47 @@ const AuthPage = () => {
     const [errors, setErrors] = useState({})
     const [submitted, setSubmitted] = useState(false)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const errs = validate(email, password)
         setErrors(errs)
         if (Object.keys(errs).length === 0) {
-            setSubmitted(true)
-            // TODO: connect to auth logic
-            console.log('Login as', role, { email, password })
+            try {
+                let foundUser = null
+
+                if (role === 'provider') {
+                    const res = await fetch(`http://localhost:5000/providers?email=${encodeURIComponent(email)}`)
+                    const providers = await res.json()
+                    const match = providers.find(p => p.password === password)
+                    if (match) {
+                        if (match.status === 'pending') {
+                            setErrors({ email: 'Your provider account is pending approval.' })
+                            return
+                        }
+                        foundUser = match
+                    }
+                } else {
+                    const res = await fetch(`http://localhost:5000/users?email=${encodeURIComponent(email)}`)
+                    const users = await res.json()
+                    foundUser = users.find(u => u.password === password) || null
+                }
+
+                if (!foundUser) {
+                    setErrors({ email: 'Invalid email or password.' })
+                    return
+                }
+
+                if (role !== 'provider' && foundUser.role !== role && foundUser.role !== 'admin') {
+                    setErrors({ email: `No ${role} account found with these credentials.` })
+                    return
+                }
+
+                localStorage.setItem('ds_user', JSON.stringify(foundUser))
+                setSubmitted(true)
+                setTimeout(() => navigate('/dashboard'), 1000)
+            } catch {
+                setErrors({ email: 'Failed to connect to the server.' })
+            }
         }
     }
 
