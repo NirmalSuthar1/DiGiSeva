@@ -8,6 +8,7 @@ import ProvidersBrows from './pages/ProvidersPage/ProvidersBrows'
 import ProviderProfilePage from './pages/ProviderProfile/ProviderProfilePage'
 import LogInPage from './pages/AuthPage/LogInPage'
 import RegisterPage from './pages/AuthPage/RegisterPage'
+import BecomeProvider from './pages/BecomeProvider/BecomeProvider'
 
 function App() {
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ function App() {
     {
       path: '/register',
       element: <RegisterPage />
+    },
+    {
+      path: '/become-provider',
+      element: <BecomeProvider />
     }
   ])
 
